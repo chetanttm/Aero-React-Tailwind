@@ -1,0 +1,259 @@
+/* Open Sans */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans/OpenSans-Light.woff2') format('woff2'),
+        url('../fonts/opensans/OpenSans-Light.woff') format('woff'),
+        url('../fonts/opensans/OpenSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans/OpenSans-Regular.woff2') format('woff2'),
+        url('../fonts/opensans/OpenSans-Regular.woff') format('woff'),
+        url('../fonts/opensans/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans/OpenSans-Medium.woff2') format('woff2'),
+        url('../fonts/opensans/OpenSans-Medium.woff') format('woff'),
+        url('../fonts/opensans/OpenSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans/OpenSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/opensans/OpenSans-SemiBold.woff') format('woff'),
+        url('../fonts/opensans/OpenSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/opensans/OpenSans-Bold.woff') format('woff'),
+        url('../fonts/opensans/OpenSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans/OpenSans-ExtraBold.woff2') format('woff2'),
+        url('../fonts/opensans/OpenSans-ExtraBold.woff') format('woff'),
+        url('../fonts/opensans/OpenSans-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* quicksand */
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/quicksand/Quicksand-Light.woff2') format('woff2'),
+        url('../fonts/quicksand/Quicksand-Light.woff') format('woff'),
+        url('../fonts/quicksand/Quicksand-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/quicksand/Quicksand-Regular.woff2') format('woff2'),
+        url('../fonts/quicksand/Quicksand-Regular.woff') format('woff'),
+        url('../fonts/quicksand/Quicksand-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/quicksand/Quicksand-Medium.woff2') format('woff2'),
+        url('../fonts/quicksand/Quicksand-Medium.woff') format('woff'),
+        url('../fonts/quicksand/Quicksand-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/quicksand/Quicksand-SemiBold.woff2') format('woff2'),
+        url('../fonts/quicksand/Quicksand-SemiBold.woff') format('woff'),
+        url('../fonts/quicksand/Quicksand-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/quicksand/Quicksand-Bold.woff2') format('woff2'),
+        url('../fonts/quicksand/Quicksand-Bold.woff') format('woff'),
+        url('../fonts/quicksand/Quicksand-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Nunito */
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/nunito/Nunito-ExtraLight.woff2') format('woff2'),
+        url('../fonts/nunito/Nunito-ExtraLight.woff') format('woff'),
+        url('../fonts/nunito/Nunito-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/nunito/Nunito-Light.woff2') format('woff2'),
+        url('../fonts/nunito/Nunito-Light.woff') format('woff'),
+        url('../fonts/nunito/Nunito-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/nunito/Nunito-Regular.woff2') format('woff2'),
+        url('../fonts/nunito/Nunito-Regular.woff') format('woff'),
+        url('../fonts/nunito/Nunito-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/nunito/Nunito-Medium.woff2') format('woff2'),
+        url('../fonts/nunito/Nunito-Medium.woff') format('woff'),
+        url('../fonts/nunito/Nunito-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/nunito/Nunito-SemiBold.woff2') format('woff2'),
+        url('../fonts/nunito/Nunito-SemiBold.woff') format('woff'),
+        url('../fonts/nunito/Nunito-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/nunito/Nunito-Bold.woff2') format('woff2'),
+        url('../fonts/nunito/Nunito-Bold.woff') format('woff'),
+        url('../fonts/nunito/Nunito-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/nunito/Nunito-ExtraBold.woff2') format('woff2'),
+        url('../fonts/nunito/Nunito-ExtraBold.woff') format('woff'),
+        url('../fonts/nunito/Nunito-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/nunito/Nunito-Black.woff2') format('woff2'),
+        url('../fonts/nunito/Nunito-Black.woff') format('woff'),
+        url('../fonts/nunito/Nunito-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Raleway */
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-Thin.woff2') format('woff2'),
+        url('../fonts/raleway/Raleway-Thin.woff') format('woff'),
+        url('../fonts/raleway/Raleway-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-ExtraLight.woff2') format('woff2'),
+        url('../fonts/raleway/Raleway-ExtraLight.woff') format('woff'),
+        url('../fonts/raleway/Raleway-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-Light.woff2') format('woff2'),
+        url('../fonts/raleway/Raleway-Light.woff') format('woff'),
+        url('../fonts/raleway/Raleway-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-Regular.woff2') format('woff2'),
+        url('../fonts/raleway/Raleway-Regular.woff') format('woff'),
+        url('../fonts/raleway/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-Medium.woff2') format('woff2'),
+        url('../fonts/raleway/Raleway-Medium.woff') format('woff'),
+        url('../fonts/raleway/Raleway-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-SemiBold.woff2') format('woff2'),
+        url('../fonts/raleway/Raleway-SemiBold.woff') format('woff'),
+        url('../fonts/raleway/Raleway-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-Bold.woff2') format('woff2'),
+        url('../fonts/raleway/Raleway-Bold.woff') format('woff'),
+        url('../fonts/raleway/Raleway-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-ExtraBold.woff2') format('woff2'),
+        url('../fonts/raleway/Raleway-ExtraBold.woff') format('woff'),
+        url('../fonts/raleway/Raleway-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-Black.woff2') format('woff2'),
+        url('../fonts/raleway/Raleway-Black.woff') format('woff'),
+        url('../fonts/raleway/Raleway-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
