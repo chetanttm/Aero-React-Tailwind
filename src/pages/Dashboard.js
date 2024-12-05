@@ -29,7 +29,6 @@ import { avatar11, avatar2, avatar3, avatar5 } from '../assets/images';
 import { Link } from 'react-router-dom';
 import { VectorMap } from '@react-jvectormap/core';
 import { worldMill } from '@react-jvectormap/world';
-import C3Chart from 'react-c3js';
 
 export default function Dashboard() {
 
@@ -251,20 +250,76 @@ export default function Dashboard() {
     };
 
     const chartData7 = {
-        columns: [
-            ['data1', 11, 8, 15, 7, 11, 13],
-            ['data2', 7, 7, 5, 7, 9, 12]
+        series: [
+          {
+            data: [121, 521, 232, 423, 251, 85]
+          },
+          {
+            data: [254, 258, 159, 267, 232, 154]
+          },
+          {
+            data: [235, 320, 452, 235, 563, 202]
+          },
         ],
-        type: 'area-step',
-        colors: {
-            'data1': 'var(--primary)',
-            'data2': 'var(--secondary)'
+        options: {
+          dataLabels: {
+            enabled: false
+          },
+          colors: ['var(--chart-color1)', 'var(--chart-color5)', 'var(--chart-color3)',],
+          chart: {
+            stacked: true,
+            toolbar: {
+              show: false,
+            },
+          },
+          tooltip: {
+            x: {
+              show: false,
+            },
+            style: {
+              fontFamily: 'var(--font-family)',
+            },
+          },
+          grid: {
+            borderColor: 'var(--border-color)',
+          },
+          xaxis: {
+            categories: ["Q1", "Q2", "Q3", "Q4", "Q5", "Q6"],
+            labels: {
+              style: {
+                fontFamily: 'var(--font-family)',
+              },
+            },
+            tooltip: {
+              enabled: false,
+            },
+            axisBorder: {
+              color: 'var(--border-color)',
+            },
+            axisTicks: {
+              color: 'var(--border-color)',
+            },
+          },
+          yaxis: {
+            min: 0,
+            max: 1250,
+            tickAmount: 5,
+            labels: {
+              style: {
+                fontFamily: 'var(--font-family)',
+              },
+            }
+          },
+          plotOptions: {
+            bar: {
+              columnWidth: '30%',
+            }
+          },
+          legend: {
+            show: false,
+          }
         },
-        names: {
-            'data1': 'Today',
-            'data2': 'month'
-        },
-    };
+      };
 
     return (
         <>
@@ -613,9 +668,9 @@ export default function Dashboard() {
                         </button>
                     </div>
                 </div>
-                <div className='card grid lg:grid-cols-[2fr_1fr] md:grid-cols-2 grid-cols-1 gap-4 bg-card-color md:p-20 p-15 rounded-md'>
-                    <C3Chart data={chartData7} size={{ height: 200 }} className="md:-ms-20 -ms-15" />
-                    <div>
+                <div className='card grid lg:grid-cols-[2fr_1fr] md:grid-cols-2 grid-cols-1 gap-4 bg-card-color rounded-md'>
+                    <ReactApexChart options={chartData7.options} series={chartData7.series} type="bar" height={200} />
+                    <div className='md:p-20 p-15'>
                         <p className='mb-6'>
                             More than 30% percent of users come from direct links. Check details page for more information.
                         </p>

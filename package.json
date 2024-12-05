@@ -1,6 +1,7 @@
 {
   "name": "aero-react-tailwind",
   "version": "0.1.0",
+  "homepage": "/templates/aero/react-tailwind/",
   "private": true,
   "dependencies": {
     "@fullcalendar/core": "^6.1.15",
@@ -17,7 +18,7 @@
     "jquery": "^3.7.1",
     "react": "^18.3.1",
     "react-apexcharts": "^1.5.0",
-    "react-c3js": "^0.1.20",
+    "react-beautiful-dnd": "^13.1.1",
     "react-data-table-component": "^7.6.2",
     "react-dom": "^18.3.1",
     "react-quill": "^2.0.0",
