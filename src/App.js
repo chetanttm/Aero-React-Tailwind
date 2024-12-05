@@ -4,7 +4,6 @@ import './assets/css/global.css'
 import './assets/css/font.css'
 import 'react-tabs/style/react-tabs.css';
 import 'react-quill/dist/quill.snow.css';
-import 'c3/c3.css';
 import Layout from "./components/layout/Layout";
 import Dashboard from "./pages/Dashboard";
 import OurProfile from "./pages/OurProfile";
