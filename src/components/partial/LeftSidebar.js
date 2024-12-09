@@ -61,6 +61,14 @@ export default function LeftSidebar({ miniSidebarToggle }) {
                     link: "Task Board",
                     url: "/project-taskboard"
                 },
+                {
+                    link: "Ticket List",
+                    url: "/project-ticket-list"
+                },
+                {
+                    link: "Ticket Detail",
+                    url: "/project-ticket-detail"
+                },
             ],
         },
     ];

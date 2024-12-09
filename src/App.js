@@ -15,6 +15,8 @@ import Calendar from "./pages/app/Calendar";
 import Contact from "./pages/app/Contact";
 import ProjectList from "./pages/project/ProjectList";
 import Taskboard from "./pages/project/Taskboard";
+import TicketList from "./pages/project/TicketList";
+import TicketDetail from "./pages/project/TicketDetail";
 
 export default function App() {
 
@@ -32,6 +34,8 @@ export default function App() {
           <Route path="/app-contact" element={<Contact />} />
           <Route path="/project-list" element={<ProjectList />} />
           <Route path="/project-taskboard" element={<Taskboard />} />
+          <Route path="/project-ticket-list" element={<TicketList />} />
+          <Route path="/project-ticket-detail" element={<TicketDetail />} />
         </Route>
       </Routes>
     </BrowserRouter>
