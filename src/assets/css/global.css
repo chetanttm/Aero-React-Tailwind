@@ -1100,8 +1100,7 @@ table.table-dark {
     border: none;
 }
 
-.react-data-table .rdt_Pagination button,
-.react-data-table .rdt_TableRow button {
+.react-data-table .rdt_Pagination button {
     color: var(--font-color);
     fill: var(--font-color);
 }
