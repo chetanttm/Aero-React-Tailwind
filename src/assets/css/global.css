@@ -29,8 +29,11 @@
     --info: #4FB8C9;
     --danger: #dc3545;
     --danger-50: #dc354526;
-    --sky: #0c7ce6;
+    --sky: #55acee;
+    --sky-50: rgba(85, 172, 238, 0.5);
     --blue: #0d6efd;
+    --purple: #6f42c1;
+    --purple-50: #6f42c180;
 
     --primary: #191a1c;
     --primary-10: #191a1c1a;

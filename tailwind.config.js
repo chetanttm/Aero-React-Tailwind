@@ -36,8 +36,12 @@ module.exports = {
                 "warning": "var(--warning)",
                 "info": "var(--info)",
                 "danger": "var(--danger)",
+                "danger-50": "var(--danger-50)",
                 "sky": "var(--sky)",
+                "sky-50": "var(--sky-50)",
                 "blue": "var(--blue)",
+                "purple": "var(--purple)",
+                "purple-50": "var(--purple-50)",
 
                 "body-color": "var(--body-color)",
                 "font-color": "var(--font-color)",

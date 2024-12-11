@@ -17,6 +17,11 @@ import ProjectList from "./pages/project/ProjectList";
 import Taskboard from "./pages/project/Taskboard";
 import TicketList from "./pages/project/TicketList";
 import TicketDetail from "./pages/project/TicketDetail";
+import AllFiles from "./pages/fileManager/AllFiles";
+import Documents from "./pages/fileManager/Documents";
+import Images from "./pages/fileManager/Images";
+import Media from "./pages/fileManager/Media";
+import BlogDashboard from "./pages/blog/BlogDashboard";
 
 export default function App() {
 
@@ -36,6 +41,11 @@ export default function App() {
           <Route path="/project-taskboard" element={<Taskboard />} />
           <Route path="/project-ticket-list" element={<TicketList />} />
           <Route path="/project-ticket-detail" element={<TicketDetail />} />
+          <Route path="/all-files" element={<AllFiles />} />
+          <Route path="/file-documents" element={<Documents />} />
+          <Route path="/file-images" element={<Images />} />
+          <Route path="/file-media" element={<Media />} />
+          <Route path="/blog-dashboard" element={<BlogDashboard />} />
         </Route>
       </Routes>
     </BrowserRouter>
