@@ -7,8 +7,10 @@ import {
 import {
     IconAppsFilled,
     IconArrowNarrowRight,
+    IconArticleFilled,
     IconChevronRight,
     IconFileFilled,
+    IconFolderFilled,
     IconHomeFilled,
     IconMenu2,
     IconUserFilled,
@@ -68,6 +70,38 @@ export default function LeftSidebar({ miniSidebarToggle }) {
                 {
                     link: "Ticket Detail",
                     url: "/project-ticket-detail"
+                },
+            ],
+        },
+        {
+            icon: IconFolderFilled,
+            link: "File Manager",
+            children: [
+                {
+                    link: "All Files",
+                    url: "/all-files"
+                },
+                {
+                    link: "Documents",
+                    url: "/file-documents"
+                },
+                {
+                    link: "Images",
+                    url: "/file-images"
+                },
+                {
+                    link: "Media",
+                    url: "/file-media"
+                },
+            ],
+        },
+        {
+            icon: IconArticleFilled,
+            link: "Blog",
+            children: [
+                {
+                    link: "Dashboard",
+                    url: "/blog-dashboard"
                 },
             ],
         },
