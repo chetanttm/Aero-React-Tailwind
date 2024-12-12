@@ -2,13 +2,20 @@ import React from 'react'
 import Breadcrumb from '../../components/common/Breadcrumb'
 import ReactApexChart from 'react-apexcharts'
 import ReactDataTable from 'react-data-table-component';
+import { VectorMap } from '@react-jvectormap/core';
+import { worldMill } from '@react-jvectormap/world';
+import { usMill } from "@react-jvectormap/unitedstates";
 import {
   IconBrandFacebook,
   IconBrandGoogleFilled,
   IconBrandLinkedin,
   IconBrandTwitter,
   IconBrandYoutubeFilled,
+  IconCaretDownFilled,
+  IconCaretUpFilled,
   IconDots,
+  IconTrendingDown,
+  IconTrendingUp,
   IconX,
 } from '@tabler/icons-react';
 
@@ -199,6 +206,39 @@ export default function BlogDashboard() {
           columnWidth: '24%',
         }
       },
+      responsive: [{
+        breakpoint: 767,
+        options: {
+          plotOptions: {
+            bar: {
+              columnWidth: '60%',
+            }
+          },
+        },
+      }]
+    },
+  };
+
+  const chartData6 = {
+    series: [40, 30, 15, 10, 5],
+    options: {
+      labels: ['Chrome', 'Firefpx', 'Safari', 'IE', 'Other'],
+      colors: ['rgb(56, 102, 166)', 'rgb(61, 168, 236)', 'rgb(70, 182, 254)', 'rgb(94, 188, 249)', 'rgb(111, 198, 255)'],
+      legend: {
+        show: true,
+        position: 'bottom',
+        markers: {
+          strokeWidth: 0,
+          shape: 'square',
+        },
+      },
+      plotOptions: {
+        pie: {
+          donut: {
+            size: "60%"
+          }
+        }
+      }
     },
   };
 
@@ -289,6 +329,158 @@ export default function BlogDashboard() {
     },
   ]
 
+  const columnsBrowser = [
+    {
+      selector: row => row.id,
+    },
+    {
+      selector: row => row.browser,
+    },
+    {
+      selector: row => row.usage,
+    },
+  ];
+
+  const dataBrowser = [
+    {
+      id: '1',
+      browser: 'Chrome',
+      usage: <div className='flex items-center gap-1'>6985 <IconCaretUpFilled className='w-[14px] h-[14px] min-w-[14px] text-success' /></div>,
+    },
+    {
+      id: '2',
+      browser: 'Other',
+      usage: <div className='flex items-center gap-1'>2697 <IconCaretUpFilled className='w-[14px] h-[14px] min-w-[14px] text-success' /></div>,
+    },
+    {
+      id: '3',
+      browser: 'Safari',
+      usage: <div className='flex items-center gap-1'>3597 <IconCaretDownFilled className='w-[14px] h-[14px] min-w-[14px] text-danger' /></div>,
+    },
+    {
+      id: '4',
+      browser: 'Firefox',
+      usage: <div className='flex items-center gap-1'>2145 <IconCaretUpFilled className='w-[14px] h-[14px] min-w-[14px] text-success' /></div>,
+    },
+    {
+      id: '5',
+      browser: 'IE',
+      usage: <div className='flex items-center gap-1'>54 <IconCaretDownFilled className='w-[14px] h-[14px] min-w-[14px] text-danger' /></div>,
+    },
+  ]
+
+  const columnsVisitors = [
+    {
+      name: 'Contrary',
+      selector: row => row.contrary,
+      sortable: true,
+    },
+    {
+      name: '2016',
+      selector: row => row.year2016,
+      sortable: true,
+    },
+    {
+      name: '2019',
+      selector: row => row.year2019,
+      sortable: true,
+    },
+    {
+      name: 'Change',
+      selector: row => row.change,
+      sortable: true,
+    },
+  ];
+
+  const dataVisitors = [
+    {
+      contrary: 'USA',
+      year2016: '2,009',
+      year2019: '3,591',
+      change: <div className='flex items-center gap-1'>7.01% <IconTrendingUp className='w-[16px] h-[16px] min-w-[16px] text-success' /></div>,
+    },
+    {
+      contrary: 'India',
+      year2016: '1,129',
+      year2019: '1,361',
+      change: <div className='flex items-center gap-1'>3.01% <IconTrendingUp className='w-[16px] h-[16px] min-w-[16px] text-success' /></div>,
+    },
+    {
+      contrary: 'Canada',
+      year2016: '2,009',
+      year2019: '2,901',
+      change: <div className='flex items-center gap-1'>9.01% <IconTrendingUp className='w-[16px] h-[16px] min-w-[16px] text-success' /></div>,
+    },
+    {
+      contrary: 'Australia',
+      year2016: '954',
+      year2019: '901',
+      change: <div className='flex items-center gap-1'>5.71% <IconTrendingDown className='w-[16px] h-[16px] min-w-[16px] text-danger' /></div>,
+    },
+    {
+      contrary: 'Other',
+      year2016: '4,236',
+      year2019: '4,591',
+      change: <div className='flex items-center gap-1'>9.15% <IconTrendingUp className='w-[16px] h-[16px] min-w-[16px] text-success' /></div>,
+    },
+  ]
+
+  const columnsUsa = [
+    {
+      name: 'Categories',
+      selector: row => row.category,
+      sortable: true,
+    },
+    {
+      name: '2016',
+      selector: row => row.year2016,
+      sortable: true,
+    },
+    {
+      name: '2019',
+      selector: row => row.year2019,
+      sortable: true,
+    },
+    {
+      name: 'Change',
+      selector: row => row.change,
+      sortable: true,
+    },
+  ];
+
+  const dataUsa = [
+    {
+      category: 'Web Design',
+      year2016: '2,009',
+      year2019: '3,591',
+      change: <div className='flex items-center gap-1'>7.01% <IconTrendingUp className='w-[16px] h-[16px] min-w-[16px] text-success' /></div>,
+    },
+    {
+      category: 'Photography',
+      year2016: '1,129',
+      year2019: '1,361',
+      change: <div className='flex items-center gap-1'>3.01% <IconTrendingUp className='w-[16px] h-[16px] min-w-[16px] text-success' /></div>,
+    },
+    {
+      category: 'Technology',
+      year2016: '2,009',
+      year2019: '2,901',
+      change: <div className='flex items-center gap-1'>9.01% <IconTrendingUp className='w-[16px] h-[16px] min-w-[16px] text-success' /></div>,
+    },
+    {
+      category: 'Lifestyle',
+      year2016: '954',
+      year2019: '901',
+      change: <div className='flex items-center gap-1'>5.71% <IconTrendingDown className='w-[16px] h-[16px] min-w-[16px] text-danger' /></div>,
+    },
+    {
+      category: 'Sports',
+      year2016: '4,236',
+      year2019: '4,591',
+      change: <div className='flex items-center gap-1'>9.15% <IconTrendingUp className='w-[16px] h-[16px] min-w-[16px] text-success' /></div>,
+    },
+  ]
+
   return (
     <>
       <Breadcrumb breadcrumbItem={breadcrumbItem} title="Blog Dashboard" />
@@ -343,7 +535,7 @@ export default function BlogDashboard() {
           <ReactApexChart options={chartData5.options} series={chartData5.series} type="bar" height={300} />
         </div>
       </div>
-      <div>
+      <div className='mb-20'>
         <div className='flex items-center justify-between gap-2 mb-10'>
           <h2 className='flex items-center gap-5 uppercase'>
             <strong className='text-primary flex items-center'>
@@ -365,6 +557,138 @@ export default function BlogDashboard() {
             columns={columnsFilter}
             data={dataFilter}
           />
+        </div>
+      </div>
+      <div className='mb-20'>
+        <div className='flex items-center justify-between gap-2 mb-10'>
+          <h2 className='flex items-center gap-5 uppercase'>
+            <strong className='text-primary flex items-center'>
+              Browser
+            </strong>
+            Usage
+          </h2>
+          <div className='flex items-center gap-2'>
+            <button>
+              <IconDots />
+            </button>
+            <button>
+              <IconX />
+            </button>
+          </div>
+        </div>
+        <div className='card bg-card-color md:p-20 p-15 rounded-md grid lg:grid-cols-2 grid-cols-1 gap-4'>
+          <ReactApexChart options={chartData6.options} series={chartData6.series} type="donut" height="280" />
+          <div className='react-data-table'>
+            <ReactDataTable
+              columns={columnsBrowser}
+              data={dataBrowser}
+              noTableHead
+            />
+          </div>
+        </div>
+      </div>
+      <div className='grid grid-cols-12 gap-4'>
+        <div className='lg:col-span-7 col-span-12'>
+          <div className='flex items-center justify-between gap-2 mb-10'>
+            <h2 className='flex items-center gap-5 uppercase'>
+              <strong className='text-primary flex items-center'>
+                Visitors
+              </strong>
+              Statistics
+            </h2>
+            <div className='flex items-center gap-2'>
+              <button>
+                <IconDots />
+              </button>
+              <button>
+                <IconX />
+              </button>
+            </div>
+          </div>
+          <div className='card bg-card-color md:p-20 p-15 rounded-md sm:h-[410px] h-[250px]'>
+            <VectorMap
+              map={worldMill}
+              backgroundColor='var(--card-color)'
+              regionStyle={{
+                initial: {
+                  fill: "var(--border-color)"
+                },
+                hover: {
+                  fill: "var(--primary)"
+                },
+              }}
+              markers={[
+                { latLng: [20.5937, 78.9629], name: "India" },
+                { latLng: [-25.2744, 133.7751], name: "Australia" },
+                { latLng: [37.0902, -95.7129], name: "United States" },
+                { latLng: [55.3781, -3.4360], name: "United Kingdom" },
+                { latLng: [51.1657, 10.4515], name: "Germany" },
+                { latLng: [56.1304, -106.3468], name: "Canada" },
+              ]}
+              series={{
+                regions: [{
+                  attribute: 'fill',
+                  values: {
+                    'IN': 'var(--danger)',
+                    'AU': 'var(--success)',
+                    'US': 'var(--sky)',
+                    'GB': 'var(--purple)',
+                    'DE': 'var(--warning)',
+                    'CA': 'var(--info)',
+                  }
+                }]
+              }}
+              markerStyle={{
+                initial: {
+                  fill: "var(--white)",
+                  stroke: 'var(--black)',
+                },
+              }}
+              zoomOnScroll={false}
+            />
+          </div>
+          <div className='react-data-table header-primary mt-10'>
+            <ReactDataTable
+              columns={columnsVisitors}
+              data={dataVisitors}
+            />
+          </div>
+        </div>
+        <div className='lg:col-span-5 col-span-12'>
+          <div className='flex items-center justify-between gap-2 mb-10'>
+            <h2 className='flex items-center gap-5 uppercase'>
+              <strong className='text-primary flex items-center'>
+                USA
+              </strong>
+              Categories Statistics
+            </h2>
+            <div className='flex items-center gap-2'>
+              <button>
+                <IconDots />
+              </button>
+              <button>
+                <IconX />
+              </button>
+            </div>
+          </div>
+          <div className='card bg-card-color md:p-20 p-15 rounded-md sm:h-[410px] h-[250px]'>
+            <VectorMap
+              map={usMill}
+              backgroundColor='var(--card-color)'
+              regionStyle={{
+                initial: {
+                  fill: "var(--sky)"
+                },
+              }}
+              zoomOnScroll={false}
+            />
+          </div>
+          <div className='react-data-table header-primary mt-10'>
+            <ReactDataTable
+              columns={columnsUsa}
+              data={dataUsa}
+            />
+          </div>
         </div>
       </div>
     </>
