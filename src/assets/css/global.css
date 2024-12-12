@@ -194,10 +194,31 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
-input[type="date"],
-select {
-    height: 40px;
-    cursor: pointer;
+.form-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form-select {
+    background-size: 18px;
+    background-repeat: no-repeat;
+}
+
+[dir="ltr"] .form-select {
+    background-position: calc(100% - 6px) center;
+}
+
+[dir="rtl"] .form-select {
+    background-position: 6px center;
+}
+
+[data-theme="light"] .form-select {
+    background-image: url('../images/chevron_down_dark.svg');
+}
+
+[data-theme="dark"] .form-select {
+    background-image: url('../images/chevron_down_light.svg');
 }
 
 /* button css start */
@@ -515,6 +536,7 @@ select {
 }
 
 .form-control .form-input,
+.form-control .form-select,
 .form-control .form-textarea {
     padding: 6px 12px;
     border-radius: 6px;
@@ -524,11 +546,13 @@ select {
 }
 
 .form-control .form-input::placeholder,
+.form-control .form-select::placeholder,
 .form-control .form-textarea::placeholder {
     opacity: 0.5;
 }
 
 .form-control .form-input:focus,
+.form-control .form-select:focus,
 .form-control .form-textarea:focus {
     outline: none;
     border: 1px solid var(--primary);
@@ -537,6 +561,7 @@ select {
 }
 
 .form-control .form-input:disabled,
+.form-control .form-select:disabled,
 .form-control .form-textarea:disabled {
     cursor: not-allowed;
     background-color: var(--border-color);
@@ -638,12 +663,6 @@ select {
     height: 1.5em;
     content: "";
     background-color: var(--card-color);
-}
-
-.floating-form-control .form-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
 }
 
 /* form floating css end */
@@ -1207,7 +1226,6 @@ body .ql-editor.ql-blank::before {
 @media (max-width: 1199px) {
     .left-sidebar {
         background-color: var(--white);
-        position: absolute;
     }
 
     .main {

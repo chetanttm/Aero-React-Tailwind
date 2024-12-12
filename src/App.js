@@ -22,6 +22,7 @@ import Documents from "./pages/fileManager/Documents";
 import Images from "./pages/fileManager/Images";
 import Media from "./pages/fileManager/Media";
 import BlogDashboard from "./pages/blog/BlogDashboard";
+import BlogPost from "./pages/blog/BlogPost";
 
 export default function App() {
 
@@ -46,6 +47,7 @@ export default function App() {
           <Route path="/file-images" element={<Images />} />
           <Route path="/file-media" element={<Media />} />
           <Route path="/blog-dashboard" element={<BlogDashboard />} />
+          <Route path="/blog-post" element={<BlogPost />} />
         </Route>
       </Routes>
     </BrowserRouter>

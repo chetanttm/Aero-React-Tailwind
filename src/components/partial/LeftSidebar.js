@@ -103,6 +103,10 @@ export default function LeftSidebar({ miniSidebarToggle }) {
                     link: "Dashboard",
                     url: "/blog-dashboard"
                 },
+                {
+                    link: "Blog Post",
+                    url: "/blog-post"
+                },
             ],
         },
     ];
