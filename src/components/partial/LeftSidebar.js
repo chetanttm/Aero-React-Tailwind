@@ -107,6 +107,14 @@ export default function LeftSidebar({ miniSidebarToggle }) {
                     link: "Blog Post",
                     url: "/blog-post"
                 },
+                {
+                    link: "List View",
+                    url: "/blog-list"
+                },
+                {
+                    link: "Grid View",
+                    url: "/blog-grid"
+                },
             ],
         },
     ];

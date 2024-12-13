@@ -27,6 +27,15 @@ import gallery12 from './gallery12.jpg'
 import gallery13 from './gallery13.jpg'
 import gallery14 from './gallery14.jpg'
 import gallery15 from './gallery15.jpg'
+import instaImage1 from './insta_image_1.jpg'
+import instaImage2 from './insta_image_2.jpg'
+import instaImage3 from './insta_image_3.jpg'
+import instaImage4 from './insta_image_4.jpg'
+import instaImage5 from './insta_image_5.jpg'
+import instaImage6 from './insta_image_6.jpg'
+import instaImage7 from './insta_image_7.jpg'
+import instaImage8 from './insta_image_8.jpg'
+import instaImage9 from './insta_image_9.jpg'
 
 export {
     companyLogo,
@@ -58,4 +67,13 @@ export {
     gallery13,
     gallery14,
     gallery15,
+    instaImage1,
+    instaImage2,
+    instaImage3,
+    instaImage4,
+    instaImage5,
+    instaImage6,
+    instaImage7,
+    instaImage8,
+    instaImage9,
 };
