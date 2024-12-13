@@ -23,6 +23,8 @@ import Images from "./pages/fileManager/Images";
 import Media from "./pages/fileManager/Media";
 import BlogDashboard from "./pages/blog/BlogDashboard";
 import BlogPost from "./pages/blog/BlogPost";
+import BlogList from "./pages/blog/BlogList";
+import BlogGrid from "./pages/blog/BlogGrid";
 
 export default function App() {
 
@@ -48,6 +50,8 @@ export default function App() {
           <Route path="/file-media" element={<Media />} />
           <Route path="/blog-dashboard" element={<BlogDashboard />} />
           <Route path="/blog-post" element={<BlogPost />} />
+          <Route path="/blog-list" element={<BlogList />} />
+          <Route path="/blog-grid" element={<BlogGrid />} />
         </Route>
       </Routes>
     </BrowserRouter>
