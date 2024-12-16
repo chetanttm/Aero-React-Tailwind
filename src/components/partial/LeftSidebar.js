@@ -115,6 +115,10 @@ export default function LeftSidebar({ miniSidebarToggle }) {
                     link: "Grid View",
                     url: "/blog-grid"
                 },
+                {
+                    link: "Blog Detail",
+                    url: "/blog-detail"
+                },
             ],
         },
     ];
