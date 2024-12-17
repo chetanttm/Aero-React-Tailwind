@@ -102,38 +102,38 @@ export default function BlogSidebar() {
                 </div>
                 <ul className='bg-card-color rounded-md md:p-20 p-15 flex flex-col gap-10'>
                     <li className='flex gap-20'>
-                        <Link to="/blog-details">
+                        <Link to="/blog-detail">
                             <img src={gallery1} alt='recent post' className='w-full max-w-[70px]' />
                         </Link>
                         <div className='flex flex-col'>
-                            <Link to="/blog-details" className='text-sky font-medium'>Fundamental analysis services</Link>
+                            <Link to="/blog-detail" className='text-sky font-medium'>Fundamental analysis services</Link>
                             <small className='text-font-color-100'>August 01, 2018</small>
                         </div>
                     </li>
                     <li className='flex gap-20'>
-                        <Link to="/blog-details">
+                        <Link to="/blog-detail">
                             <img src={gallery2} alt='recent post' className='w-full max-w-[70px]' />
                         </Link>
                         <div className='flex flex-col'>
-                            <Link to="/blog-details" className='text-sky font-medium'>Fundamental analysis services</Link>
+                            <Link to="/blog-detail" className='text-sky font-medium'>Fundamental analysis services</Link>
                             <small className='text-font-color-100'>August 01, 2018</small>
                         </div>
                     </li>
                     <li className='flex gap-20'>
-                        <Link to="/blog-details">
+                        <Link to="/blog-detail">
                             <img src={gallery3} alt='recent post' className='w-full max-w-[70px]' />
                         </Link>
                         <div className='flex flex-col'>
-                            <Link to="/blog-details" className='text-sky font-medium'>Fundamental analysis services</Link>
+                            <Link to="/blog-detail" className='text-sky font-medium'>Fundamental analysis services</Link>
                             <small className='text-font-color-100'>August 01, 2018</small>
                         </div>
                     </li>
                     <li className='flex gap-20'>
-                        <Link to="/blog-details">
+                        <Link to="/blog-detail">
                             <img src={gallery4} alt='recent post' className='w-full max-w-[70px]' />
                         </Link>
                         <div className='flex flex-col'>
-                            <Link to="/blog-details" className='text-sky font-medium'>Fundamental analysis services</Link>
+                            <Link to="/blog-detail" className='text-sky font-medium'>Fundamental analysis services</Link>
                             <small className='text-font-color-100'>August 01, 2018</small>
                         </div>
                     </li>

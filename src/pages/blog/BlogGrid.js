@@ -74,7 +74,7 @@ export default function BlogGrid() {
                         </ul>
                     </div>
                     <h5 className='text-[20px]/[26px] font-bold text-sky mb-4'>
-                        <Link to="/blog-details">The Most Advance Business Plan</Link>
+                        <Link to="/blog-detail">The Most Advance Business Plan</Link>
                     </h5>
                     <p className='mb-6'>
                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem of letters, as opposed to using 'Content here, content here', making it look like readable English.
@@ -124,7 +124,7 @@ export default function BlogGrid() {
                         </ul>
                     </div>
                     <h5 className='text-[20px]/[26px] font-bold text-sky mb-4'>
-                        <Link to="/blog-details">The Most Advance Business Plan</Link>
+                        <Link to="/blog-detail">The Most Advance Business Plan</Link>
                     </h5>
                     <p className='mb-6'>
                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem of letters, as opposed to using 'Content here, content here', making it look like readable English.
@@ -174,7 +174,7 @@ export default function BlogGrid() {
                         </ul>
                     </div>
                     <h5 className='text-[20px]/[26px] font-bold text-sky mb-4'>
-                        <Link to="/blog-details">WTCR from 2018: new rules, more cars, more races</Link>
+                        <Link to="/blog-detail">WTCR from 2018: new rules, more cars, more races</Link>
                     </h5>
                     <p className='mb-6'>
                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem of letters, as opposed to using 'Content here, content here', making it look like readable English.
@@ -224,7 +224,7 @@ export default function BlogGrid() {
                         </ul>
                     </div>
                     <h5 className='text-[20px]/[26px] font-bold text-sky mb-4'>
-                        <Link to="/blog-details">WTCR from 2018: new rules, more cars, more races</Link>
+                        <Link to="/blog-detail">WTCR from 2018: new rules, more cars, more races</Link>
                     </h5>
                     <p className='mb-6'>
                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem of letters, as opposed to using 'Content here, content here', making it look like readable English.
@@ -274,7 +274,7 @@ export default function BlogGrid() {
                         </ul>
                     </div>
                     <h5 className='text-[20px]/[26px] font-bold text-sky mb-4'>
-                        <Link to="/blog-details">All photographs are accurate. None of them is the truth</Link>
+                        <Link to="/blog-detail">All photographs are accurate. None of them is the truth</Link>
                     </h5>
                     <p className='mb-6'>
                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem of letters, as opposed to using 'Content here, content here', making it look like readable English.
@@ -324,7 +324,7 @@ export default function BlogGrid() {
                         </ul>
                     </div>
                     <h5 className='text-[20px]/[26px] font-bold text-sky mb-4'>
-                        <Link to="/blog-details">All photographs are accurate. None of them is the truth</Link>
+                        <Link to="/blog-detail">All photographs are accurate. None of them is the truth</Link>
                     </h5>
                     <p className='mb-6'>
                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem of letters, as opposed to using 'Content here, content here', making it look like readable English.
