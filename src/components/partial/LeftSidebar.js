@@ -13,6 +13,7 @@ import {
     IconFolderFilled,
     IconHomeFilled,
     IconMenu2,
+    IconShoppingCartFilled,
     IconUserFilled,
 } from '@tabler/icons-react';
 
@@ -118,6 +119,16 @@ export default function LeftSidebar({ miniSidebarToggle }) {
                 {
                     link: "Blog Detail",
                     url: "/blog-detail"
+                },
+            ],
+        },
+        {
+            icon: IconShoppingCartFilled,
+            link: "Ecommerce",
+            children: [
+                {
+                    link: "Dashboard",
+                    url: "/ec-dashboard"
                 },
             ],
         },
