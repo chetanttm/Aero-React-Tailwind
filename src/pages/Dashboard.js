@@ -600,7 +600,7 @@ export default function Dashboard() {
                             </button>
                         </div>
                     </div>
-                    <div className='card bg-card-color md:p-20 p-15 rounded-md h-[410px]'>
+                    <div className='card bg-card-color md:p-20 p-15 rounded-md sm:h-[410px] h-[250px]'>
                         <VectorMap
                             map={worldMill}
                             backgroundColor='var(--bg-dark)'
