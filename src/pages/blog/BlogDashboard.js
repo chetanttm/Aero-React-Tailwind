@@ -625,19 +625,6 @@ export default function BlogDashboard() {
                 { latLng: [51.1657, 10.4515], name: "Germany" },
                 { latLng: [56.1304, -106.3468], name: "Canada" },
               ]}
-              series={{
-                regions: [{
-                  attribute: 'fill',
-                  values: {
-                    'IN': 'var(--danger)',
-                    'AU': 'var(--success)',
-                    'US': 'var(--sky)',
-                    'GB': 'var(--purple)',
-                    'DE': 'var(--warning)',
-                    'CA': 'var(--info)',
-                  }
-                }]
-              }}
               markerStyle={{
                 initial: {
                   fill: "var(--white)",

@@ -36,6 +36,12 @@ import instaImage6 from './insta_image_6.jpg'
 import instaImage7 from './insta_image_7.jpg'
 import instaImage8 from './insta_image_8.jpg'
 import instaImage9 from './insta_image_9.jpg'
+import ecommerce1 from './ecommerce1.png'
+import ecommerce2 from './ecommerce2.png'
+import ecommerce3 from './ecommerce3.png'
+import ecommerce4 from './ecommerce4.png'
+import ecommerce5 from './ecommerce5.png'
+import placeholder from './placeholder.jpg'
 
 export {
     companyLogo,
@@ -76,4 +82,10 @@ export {
     instaImage7,
     instaImage8,
     instaImage9,
+    ecommerce1,
+    ecommerce2,
+    ecommerce3,
+    ecommerce4,
+    ecommerce5,
+    placeholder,
 };
