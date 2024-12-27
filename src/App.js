@@ -27,6 +27,9 @@ import BlogList from "./pages/blog/BlogList";
 import BlogGrid from "./pages/blog/BlogGrid";
 import BlogDetail from "./pages/blog/BlogDetail";
 import EcDashboard from "./pages/ecommerce/EcDashboard";
+import Product from "./pages/ecommerce/Product";
+import ProductList from "./pages/ecommerce/ProductList";
+import ProductDetail from "./pages/ecommerce/ProductDetail";
 
 export default function App() {
 
@@ -56,6 +59,9 @@ export default function App() {
           <Route path="/blog-grid" element={<BlogGrid />} />
           <Route path="/blog-detail" element={<BlogDetail />} />
           <Route path="/ec-dashboard" element={<EcDashboard />} />
+          <Route path="/ec-product" element={<Product />} />
+          <Route path="/ec-product-list" element={<ProductList />} />
+          <Route path="/ec-product-detail" element={<ProductDetail />} />
         </Route>
       </Routes>
     </BrowserRouter>
