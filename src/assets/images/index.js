@@ -41,6 +41,17 @@ import ecommerce2 from './ecommerce2.png'
 import ecommerce3 from './ecommerce3.png'
 import ecommerce4 from './ecommerce4.png'
 import ecommerce5 from './ecommerce5.png'
+import ecommerce6 from './ecommerce6.png'
+import ecommerce7 from './ecommerce7.png'
+import ecommerce8 from './ecommerce8.png'
+import ecommerce9 from './ecommerce9.png'
+import ecommerce10 from './ecommerce10.png'
+import ecommerce11 from './ecommerce11.png'
+import ecommerce12 from './ecommerce12.png'
+import ecommerce13 from './ecommerce13.png'
+import ecommerce14 from './ecommerce14.png'
+import ecommerce15 from './ecommerce15.png'
+import ecommerce16 from './ecommerce16.png'
 import placeholder from './placeholder.jpg'
 
 export {
@@ -87,5 +98,16 @@ export {
     ecommerce3,
     ecommerce4,
     ecommerce5,
+    ecommerce6,
+    ecommerce7,
+    ecommerce8,
+    ecommerce9,
+    ecommerce10,
+    ecommerce11,
+    ecommerce12,
+    ecommerce13,
+    ecommerce14,
+    ecommerce15,
+    ecommerce16,
     placeholder,
 };

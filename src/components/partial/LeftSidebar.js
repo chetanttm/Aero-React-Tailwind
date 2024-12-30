@@ -130,6 +130,18 @@ export default function LeftSidebar({ miniSidebarToggle }) {
                     link: "Dashboard",
                     url: "/ec-dashboard"
                 },
+                {
+                    link: "Product",
+                    url: "/ec-product"
+                },
+                {
+                    link: "Product List",
+                    url: "/ec-product-list"
+                },
+                {
+                    link: "Product Detail",
+                    url: "/ec-product-detail"
+                },
             ],
         },
     ];

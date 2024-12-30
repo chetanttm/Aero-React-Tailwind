@@ -9,7 +9,7 @@ module.exports = {
                 "base": "var(--font-family)",
             },
             fontSize: {
-                "base": ["16px", "24px"]
+                "base": ["16px", "24px"],
             },
             boxShadow: {
                 "shadow-sm": "var(--shadow-sm)",
