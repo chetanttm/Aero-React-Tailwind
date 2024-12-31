@@ -9,6 +9,7 @@ import {
     IconArrowNarrowRight,
     IconArticleFilled,
     IconChevronRight,
+    IconDiamond,
     IconFileFilled,
     IconFolderFilled,
     IconHomeFilled,
@@ -141,6 +142,44 @@ export default function LeftSidebar({ miniSidebarToggle }) {
                 {
                     link: "Product Detail",
                     url: "/ec-product-detail"
+                },
+            ],
+        },
+        {
+            icon: IconDiamond,
+            link: "Components",
+            children: [
+                {
+                    link: "Typography",
+                    url: "/ui-typography",
+                },
+                {
+                    link: "Tabs",
+                    url: "/ui-tabs",
+                },
+                {
+                    link: "Buttons",
+                    url: "/ui-buttons",
+                },
+                {
+                    link: "Icons",
+                    url: "/ui-icons",
+                },
+                {
+                    link: "Colors",
+                    url: "/ui-colors",
+                },
+                {
+                    link: "List Group",
+                    url: "/ui-list-group",
+                },
+                {
+                    link: "Modals",
+                    url: "/ui-modals",
+                },
+                {
+                    link: "Progress Bars",
+                    url: "/ui-progressbars",
                 },
             ],
         },
