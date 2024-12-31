@@ -29,6 +29,7 @@ module.exports = {
                 "white-10": "var(--white-10)",
                 "black": "var(--black)",
                 "black-50": "var(--black-50)",
+                "black-100": "var(--black-100)",
                 "dark": "var(--dark)",
                 "grey": "var(--grey)",
                 "success": "var(--success)",
@@ -42,6 +43,8 @@ module.exports = {
                 "blue": "var(--blue)",
                 "purple": "var(--purple)",
                 "purple-50": "var(--purple-50)",
+                "pink": "var(--pink)",
+                "yellow": "var(--yellow)",
 
                 "body-color": "var(--body-color)",
                 "font-color": "var(--font-color)",

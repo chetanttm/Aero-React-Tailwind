@@ -30,6 +30,14 @@ import EcDashboard from "./pages/ecommerce/EcDashboard";
 import Product from "./pages/ecommerce/Product";
 import ProductList from "./pages/ecommerce/ProductList";
 import ProductDetail from "./pages/ecommerce/ProductDetail";
+import UiTypography from "./pages/components/UiTypography";
+import UiTabs from "./pages/components/UiTabs";
+import UiButtons from "./pages/components/UiButtons";
+import UiIcons from "./pages/components/UiIcons";
+import UiColors from "./pages/components/UiColors";
+import UiListGroup from "./pages/components/UiListGroup";
+import UiModals from "./pages/components/UiModals";
+import UiProgressbars from "./pages/components/UiProgressbars";
 
 export default function App() {
 
@@ -62,6 +70,14 @@ export default function App() {
           <Route path="/ec-product" element={<Product />} />
           <Route path="/ec-product-list" element={<ProductList />} />
           <Route path="/ec-product-detail" element={<ProductDetail />} />
+          <Route path="/ui-typography" element={<UiTypography />} />
+          <Route path="/ui-tabs" element={<UiTabs />} />
+          <Route path="/ui-buttons" element={<UiButtons />} />
+          <Route path="/ui-icons" element={<UiIcons />} />
+          <Route path="/ui-colors" element={<UiColors />} />
+          <Route path="/ui-list-group" element={<UiListGroup />} />
+          <Route path="/ui-modals" element={<UiModals />} />
+          <Route path="/ui-progressbars" element={<UiProgressbars />} />
         </Route>
       </Routes>
     </BrowserRouter>

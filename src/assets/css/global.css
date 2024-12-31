@@ -21,11 +21,12 @@
     --white-10: #ffffff1a;
     --black: #000;
     --black-50: rgba(0, 0, 0, 0.5);
+    --black-100: #989898;
     --dark: #2d3238;
     --grey: #6c757d;
     --success: #198754;
     --success-50: #19875426;
-    --warning: #f1df3c;
+    --warning: #FF9800;
     --info: #4FB8C9;
     --danger: #dc3545;
     --danger-50: #dc354526;
@@ -34,6 +35,8 @@
     --blue: #0d6efd;
     --purple: #6f42c1;
     --purple-50: #6f42c180;
+    --pink: #e47297;
+    --yellow: #ffc107;
 
     --primary: #191a1c;
     --primary-10: #191a1c1a;
@@ -278,9 +281,9 @@ input[type=number] {
     color: var(--white);
 }
 
-.btn.btn-yellow {
-    border: 1px solid var(--yellow);
-    background-color: var(--yellow);
+.btn.btn-warning {
+    border: 1px solid var(--warning);
+    background-color: var(--warning);
     color: var(--black);
 }
 
@@ -338,10 +341,10 @@ input[type=number] {
     border: 1px solid var(--danger);
 }
 
-.btn.btn-outline-yellow {
+.btn.btn-outline-warning {
     background-color: transparent;
-    color: var(--yellow);
-    border: 1px solid var(--yellow);
+    color: var(--warning);
+    border: 1px solid var(--warning);
 }
 
 .btn.btn-outline-sky {
@@ -946,7 +949,7 @@ table.table-dark {
 }
 
 .custom-tab1 ul li.react-tabs__tab--selected {
-    background: var(--bg-dark);
+    background: var(--card-color);
     color: var(--primary);
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
