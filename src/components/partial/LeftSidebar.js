@@ -181,6 +181,14 @@ export default function LeftSidebar({ miniSidebarToggle }) {
                     link: "Progress Bars",
                     url: "/ui-progressbars",
                 },
+                {
+                    link: "Toastify",
+                    url: "/ui-toastify",
+                },
+                {
+                    link: "Collapse",
+                    url: "/ui-collapse",
+                },
             ],
         },
     ];

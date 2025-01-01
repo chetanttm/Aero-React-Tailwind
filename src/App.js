@@ -38,6 +38,8 @@ import UiColors from "./pages/components/UiColors";
 import UiListGroup from "./pages/components/UiListGroup";
 import UiModals from "./pages/components/UiModals";
 import UiProgressbars from "./pages/components/UiProgressbars";
+import UiToastify from "./pages/components/UiToastify";
+import UiCollapse from "./pages/components/UiCollapse";
 
 export default function App() {
 
@@ -78,6 +80,8 @@ export default function App() {
           <Route path="/ui-list-group" element={<UiListGroup />} />
           <Route path="/ui-modals" element={<UiModals />} />
           <Route path="/ui-progressbars" element={<UiProgressbars />} />
+          <Route path="/ui-toastify" element={<UiToastify />} />
+          <Route path="/ui-collapse" element={<UiCollapse />} />
         </Route>
       </Routes>
     </BrowserRouter>
