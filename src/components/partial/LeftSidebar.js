@@ -9,6 +9,7 @@ import {
     IconArrowNarrowRight,
     IconArticleFilled,
     IconChevronRight,
+    IconClipboardList,
     IconDiamond,
     IconFileFilled,
     IconFolderFilled,
@@ -188,6 +189,16 @@ export default function LeftSidebar({ miniSidebarToggle }) {
                 {
                     link: "Collapse",
                     url: "/ui-collapse",
+                },
+            ],
+        },
+        {
+            icon: IconClipboardList,
+            link: "Forms",
+            children: [
+                {
+                    link: "Basic Elements",
+                    url: "/basic-elements",
                 },
             ],
         },

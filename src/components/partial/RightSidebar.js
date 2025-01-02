@@ -580,7 +580,7 @@ export default function RightSidebar() {
                                                     type="radio"
                                                     id={item.id}
                                                     name="googleFontRadio"
-                                                    className="form-radio-input"
+                                                    className="form-radio-input small"
                                                     checked={selectedFont === item.label}
                                                     onChange={() => handleFontChange(item)}
                                                 />

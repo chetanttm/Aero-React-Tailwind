@@ -40,6 +40,7 @@ import UiModals from "./pages/components/UiModals";
 import UiProgressbars from "./pages/components/UiProgressbars";
 import UiToastify from "./pages/components/UiToastify";
 import UiCollapse from "./pages/components/UiCollapse";
+import BasicElements from "./pages/forms/BasicElements";
 
 export default function App() {
 
@@ -82,6 +83,7 @@ export default function App() {
           <Route path="/ui-progressbars" element={<UiProgressbars />} />
           <Route path="/ui-toastify" element={<UiToastify />} />
           <Route path="/ui-collapse" element={<UiCollapse />} />
+          <Route path="/basic-elements" element={<BasicElements />} />
         </Route>
       </Routes>
     </BrowserRouter>

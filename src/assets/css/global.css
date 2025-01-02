@@ -673,6 +673,7 @@ input[type=number] {
 /* switch and checkbox css start */
 .form-check {
     display: flex;
+    align-items: center;
     gap: 8px;
 }
 
@@ -692,6 +693,11 @@ input[type=number] {
     border: 1px solid var(--grey);
     cursor: pointer;
     position: relative;
+}
+
+.form-check .form-check-input.small {
+    width: 1rem;
+    height: 1rem;
 }
 
 [dir="rtl"] .form-check .form-check-input {
@@ -778,7 +784,9 @@ input[type=number] {
 
 /* radio css start */
 .form-radio {
-    padding-inline-start: 25px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .form-radio input:disabled,
@@ -788,10 +796,8 @@ input[type=number] {
 }
 
 .form-radio .form-radio-input {
-    width: 1rem;
-    height: 1rem;
-    margin-block-start: .35em;
-    margin-inline-start: -1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
     float: inline-start;
     background-color: var(--border-color);
     border-radius: 100rem;
@@ -800,6 +806,11 @@ input[type=number] {
     border: 1px solid transparent;
     cursor: pointer;
     position: relative;
+}
+
+.form-radio .form-radio-input.small {
+    width: 1rem;
+    height: 1rem;
 }
 
 .form-radio .form-radio-input:checked {
