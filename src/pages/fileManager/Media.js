@@ -138,7 +138,7 @@ export default function Media() {
                                         : item.icon ? <item.icon className={`w-[40px] h-[40px] min-w-[40px] ${item.iconColor}`} />
                                             : ''}
                                 </div>
-                                <div className='border-t border-border p-10'>
+                                <div className='border-t border-border-color p-10'>
                                     <p className="mb-5 text-font-color-100">{item.name}</p>
                                     <small className='text-sky flex items-center justify-between gap-10'>
                                         Size: {item.size}
@@ -161,7 +161,7 @@ export default function Media() {
                                         : item.icon ? <item.icon className={`w-[40px] h-[40px] min-w-[40px] ${item.iconColor}`} />
                                             : ''}
                                 </div>
-                                <div className='border-t border-border p-10'>
+                                <div className='border-t border-border-color p-10'>
                                     <p className="mb-5 text-font-color-100">{item.name}</p>
                                     <small className='text-sky flex items-center justify-between gap-10'>
                                         Size: {item.size}

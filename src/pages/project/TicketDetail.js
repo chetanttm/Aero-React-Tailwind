@@ -183,7 +183,7 @@ export default function TicketDetail() {
                         <div className='card bg-card-color md:p-20 p-15 rounded-md'>
                             <ReactQuill
                                 modules={{ toolbar: toolbarOptions }}
-                                className='bg-bg-light'
+                                className='bg-card-color'
                                 defaultValue="
                                 <p>
                                     Hello There !

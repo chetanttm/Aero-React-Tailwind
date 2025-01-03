@@ -9,8 +9,8 @@ import {
     IconArrowNarrowRight,
     IconArticleFilled,
     IconChevronRight,
-    IconClipboardList,
-    IconDiamond,
+    IconClipboardFilled,
+    IconDiamondFilled,
     IconFileFilled,
     IconFolderFilled,
     IconHomeFilled,
@@ -147,7 +147,7 @@ export default function LeftSidebar({ miniSidebarToggle }) {
             ],
         },
         {
-            icon: IconDiamond,
+            icon: IconDiamondFilled,
             link: "Components",
             children: [
                 {
@@ -193,12 +193,24 @@ export default function LeftSidebar({ miniSidebarToggle }) {
             ],
         },
         {
-            icon: IconClipboardList,
+            icon: IconClipboardFilled,
             link: "Forms",
             children: [
                 {
                     link: "Basic Elements",
                     url: "/basic-elements",
+                },
+                {
+                    link: "Form Validation",
+                    url: "/form-validation",
+                },
+                {
+                    link: "Drag & Drop Upload",
+                    url: "/drag-drop-upload",
+                },
+                {
+                    link: "Quill Editor",
+                    url: "/quill-editor",
                 },
             ],
         },

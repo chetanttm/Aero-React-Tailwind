@@ -41,6 +41,9 @@ import UiProgressbars from "./pages/components/UiProgressbars";
 import UiToastify from "./pages/components/UiToastify";
 import UiCollapse from "./pages/components/UiCollapse";
 import BasicElements from "./pages/forms/BasicElements";
+import FormValidation from "./pages/forms/FormValidation";
+import DragDropUpload from "./pages/forms/DragDropUpload";
+import QuillEditor from "./pages/forms/QuillEditor";
 
 export default function App() {
 
@@ -84,6 +87,9 @@ export default function App() {
           <Route path="/ui-toastify" element={<UiToastify />} />
           <Route path="/ui-collapse" element={<UiCollapse />} />
           <Route path="/basic-elements" element={<BasicElements />} />
+          <Route path="/form-validation" element={<FormValidation />} />
+          <Route path="/drag-drop-upload" element={<DragDropUpload />} />
+          <Route path="/quill-editor" element={<QuillEditor />} />
         </Route>
       </Routes>
     </BrowserRouter>

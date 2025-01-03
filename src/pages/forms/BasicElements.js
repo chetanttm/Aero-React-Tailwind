@@ -26,10 +26,10 @@ export default function BasicElements() {
                                 <span className="flex items-center justify-center border border-border-color rounded-l-[4px] mr-[-1px] py-[6px] px-[12px] bg-body-color">
                                     @
                                 </span>
-                                <input type='text' placeholder="Username" className='flex-[1_1_auto] rounded-r-[4px] rounded-l-none border border-border-color bg-bg-dark py-[6px] px-[12px] placeholder:text-text-secondary focus:outline-none' />
+                                <input type='text' placeholder="Username" className='flex-[1_1_auto] rounded-r-[4px] rounded-l-none border border-border-color bg-content-color py-[6px] px-[12px] placeholder:text-font-color-100 focus:outline-none' />
                             </div>
                             <div className='relative w-full flex flex-wrap min-h-[35px] '>
-                                <input type='text' placeholder="Username" className='flex-[1_1_auto] rounded-l-[4px] rounded-r-none border border-border-color bg-bg-dark py-[6px] px-[12px] placeholder:text-text-secondary focus:outline-none' />
+                                <input type='text' placeholder="Username" className='flex-[1_1_auto] rounded-l-[4px] rounded-r-none border border-border-color bg-content-color py-[6px] px-[12px] placeholder:text-font-color-100 focus:outline-none' />
                                 <span className="flex items-center justify-center border border-border-color rounded-r-[4px] ml-[-1px] py-[6px] px-[12px] bg-body-color">
                                     @example.com
                                 </span>
@@ -38,13 +38,13 @@ export default function BasicElements() {
                                 <span className="flex items-center justify-center border border-border-color rounded-l-[4px] mr-[-1px] py-[6px] px-[12px] bg-body-color">
                                     https://example.com/users/
                                 </span>
-                                <input type='text' placeholder="Recipient's username" className='flex-[1_1_auto] rounded-r-[4px] rounded-l-none border border-border-color bg-bg-dark py-[6px] px-[12px] placeholder:text-text-secondary focus:outline-none' />
+                                <input type='text' placeholder="Recipient's username" className='flex-[1_1_auto] rounded-r-[4px] rounded-l-none border border-border-color bg-content-color py-[6px] px-[12px] placeholder:text-font-color-100 focus:outline-none' />
                             </div>
                             <div className='relative w-full flex flex-wrap min-h-[35px] '>
                                 <span className="flex items-center justify-center border border-border-color rounded-l-[4px] mr-[-1px] py-[6px] px-[12px] bg-body-color">
                                     $
                                 </span>
-                                <input type='text' placeholder="Recipient's username" className='flex-[1_1_auto] border rounded-none border-border-color bg-bg-dark py-[6px] px-[12px] placeholder:text-text-secondary focus:outline-none' />
+                                <input type='text' placeholder="Recipient's username" className='flex-[1_1_auto] border rounded-none border-border-color bg-content-color py-[6px] px-[12px] placeholder:text-font-color-100 focus:outline-none' />
                                 <span className="flex items-center justify-center border border-border-color rounded-r-[4px] ml-[-1px] py-[6px] px-[12px] bg-body-color">
                                     .00
                                 </span>
@@ -53,7 +53,7 @@ export default function BasicElements() {
                                 <span className="flex items-center justify-center border border-border-color rounded-l-[4px] mr-[-1px] py-[6px] px-[12px] bg-body-color">
                                     With Textarea
                                 </span>
-                                <textarea rows={3} className='flex-[1_1_auto] min-h-[35px] rounded-r-[4px] rounded-l-none border border-border-color bg-bg-dark py-[6px] px-[12px] placeholder:text-text-secondary focus:outline-none' />
+                                <textarea rows={3} className='flex-[1_1_auto] min-h-[35px] rounded-r-[4px] rounded-l-none border border-border-color bg-content-color py-[6px] px-[12px] placeholder:text-font-color-100 focus:outline-none' />
                             </div>
                         </div>
                     </div>
@@ -95,19 +95,19 @@ export default function BasicElements() {
                                 <span className="text-[12px]/[1] flex items-center justify-center border border-border-color rounded-l-[4px] mr-[-1px] py-[6px] px-[12px] bg-body-color">
                                     Small
                                 </span>
-                                <input type='text' className='text-[12px]/[1] flex-[1_1_auto] rounded-r-[4px] rounded-l-none border border-border-color bg-bg-dark py-[6px] px-[12px] placeholder:text-text-secondary focus:outline-none' />
+                                <input type='text' className='text-[12px]/[1] flex-[1_1_auto] rounded-r-[4px] rounded-l-none border border-border-color bg-content-color py-[6px] px-[12px] placeholder:text-font-color-100 focus:outline-none' />
                             </div>
                             <div className='relative w-full flex flex-wrap min-h-[35px] '>
                                 <span className="flex items-center justify-center border border-border-color rounded-l-[4px] mr-[-1px] py-[6px] px-[12px] bg-body-color">
                                     Default
                                 </span>
-                                <input type='text' className='flex-[1_1_auto] rounded-r-[4px] rounded-l-none border border-border-color bg-bg-dark py-[6px] px-[12px] placeholder:text-text-secondary focus:outline-none' />
+                                <input type='text' className='flex-[1_1_auto] rounded-r-[4px] rounded-l-none border border-border-color bg-content-color py-[6px] px-[12px] placeholder:text-font-color-100 focus:outline-none' />
                             </div>
                             <div className='relative w-full flex flex-wrap min-h-[40px]'>
                                 <span className="text-[20px]/[1] flex items-center justify-center border border-border-color rounded-l-[4px] mr-[-1px] py-[6px] px-[12px] bg-body-color">
                                     Large
                                 </span>
-                                <input type='text' className='text-[20px]/[1] flex-[1_1_auto] rounded-r-[4px] rounded-l-none border border-border-color bg-bg-dark py-[6px] px-[12px] placeholder:text-text-secondary focus:outline-none' />
+                                <input type='text' className='text-[20px]/[1] flex-[1_1_auto] rounded-r-[4px] rounded-l-none border border-border-color bg-content-color py-[6px] px-[12px] placeholder:text-font-color-100 focus:outline-none' />
                             </div>
                         </div>
                     </div>
@@ -122,7 +122,7 @@ export default function BasicElements() {
                                         <input type="checkbox" className="form-check-input small" />
                                     </div>
                                 </span>
-                                <input type='text' className='flex-[1_1_auto] rounded-r-[4px] rounded-l-none border border-border-color bg-bg-dark py-[6px] px-[12px] placeholder:text-text-secondary focus:outline-none' />
+                                <input type='text' className='flex-[1_1_auto] rounded-r-[4px] rounded-l-none border border-border-color bg-content-color py-[6px] px-[12px] placeholder:text-font-color-100 focus:outline-none' />
                             </div>
                             <div className='relative w-full flex flex-wrap min-h-[35px] '>
                                 <span className="flex items-center justify-center border border-border-color rounded-l-[4px] mr-[-1px] py-[6px] px-[12px] bg-body-color">
@@ -130,7 +130,7 @@ export default function BasicElements() {
                                         <input type="checkbox" className="form-radio-input small" />
                                     </div>
                                 </span>
-                                <input type='text' className='flex-[1_1_auto] rounded-r-[4px] rounded-l-none border border-border-color bg-bg-dark py-[6px] px-[12px] placeholder:text-text-secondary focus:outline-none' />
+                                <input type='text' className='flex-[1_1_auto] rounded-r-[4px] rounded-l-none border border-border-color bg-content-color py-[6px] px-[12px] placeholder:text-font-color-100 focus:outline-none' />
                             </div>
                         </div>
                     </div>
@@ -141,15 +141,16 @@ export default function BasicElements() {
                         <div className='grid sm:grid-cols-2 grid-cols-1 gap-30'>
                             <div className='flex flex-col gap-10'>
                                 <div className="form-check">
-                                    <input type="checkbox" className="form-check-input small" />
-                                    <label className="form-checkbox-label">Fancy Checkbox 1</label>
+                                    <input type="checkbox" id='option1' className="form-check-input small" />
+                                    <label htmlFor='option1' className="form-check-label">Fancy Checkbox 1</label>
                                 </div>
                                 <div className="form-check">
-                                    <input type="checkbox" className="form-check-input small" defaultChecked />
-                                    <label className="form-checkbox-label">Fancy Checkbox 2</label>
-                                </div><div className="form-check">
-                                    <input type="checkbox" className="form-check-input small" />
-                                    <label className="form-checkbox-label">Fancy Checkbox 3</label>
+                                    <input type="checkbox" id='option2' className="form-check-input small" defaultChecked />
+                                    <label htmlFor='option2' className="form-check-label">Fancy Checkbox 2</label>
+                                </div>
+                                <div className="form-check">
+                                    <input type="checkbox" id='option3' className="form-check-input small" />
+                                    <label htmlFor='option3' className="form-check-label">Fancy Checkbox 3</label>
                                 </div>
                             </div>
                             <div className='flex flex-col gap-10'>
@@ -182,10 +183,10 @@ export default function BasicElements() {
                                 <span className="flex items-center justify-center border border-border-color mr-[-1px] py-[6px] px-[12px] bg-body-color">
                                     0.00
                                 </span>
-                                <input type='text' className='flex-[1_1_auto] rounded-r-[4px] rounded-l-none border border-border-color bg-bg-dark py-[6px] px-[12px] placeholder:text-text-secondary focus:outline-none' />
+                                <input type='text' className='flex-[1_1_auto] rounded-r-[4px] rounded-l-none border border-border-color bg-content-color py-[6px] px-[12px] placeholder:text-font-color-100 focus:outline-none' />
                             </div>
                             <div className='relative w-full flex flex-wrap min-h-[35px] '>
-                                <input type='text' className='flex-[1_1_auto] rounded-l-[4px] rounded-r-none border border-border-color bg-bg-dark py-[6px] px-[12px] placeholder:text-text-secondary focus:outline-none' />
+                                <input type='text' className='flex-[1_1_auto] rounded-l-[4px] rounded-r-none border border-border-color bg-content-color py-[6px] px-[12px] placeholder:text-font-color-100 focus:outline-none' />
                                 <span className="flex items-center justify-center border border-border-color ml-[-1px] py-[6px] px-[12px] bg-body-color">
                                     0.00
                                 </span>
@@ -204,10 +205,10 @@ export default function BasicElements() {
                                 <button className="btn btn-outline-secondary !rounded-r-none mr-[-1px] relative">
                                     Button
                                 </button>
-                                <input type='text' className='flex-[1_1_auto] rounded-r-[4px] rounded-l-none border border-border-color bg-bg-dark py-[6px] px-[12px] placeholder:text-text-secondary focus:outline-none' />
+                                <input type='text' className='flex-[1_1_auto] rounded-r-[4px] rounded-l-none border border-border-color bg-content-color py-[6px] px-[12px] placeholder:text-font-color-100 focus:outline-none' />
                             </div>
                             <div className='relative w-full flex flex-wrap min-h-[35px] '>
-                                <input type='text' placeholder="Recipient's username" className='flex-[1_1_auto] rounded-l-[4px] rounded-r-none border border-border-color bg-bg-dark py-[6px] px-[12px] placeholder:text-text-secondary focus:outline-none' />
+                                <input type='text' placeholder="Recipient's username" className='flex-[1_1_auto] rounded-l-[4px] rounded-r-none border border-border-color bg-content-color py-[6px] px-[12px] placeholder:text-font-color-100 focus:outline-none' />
                                 <button className="btn btn-outline-secondary !rounded-l-none ml-[-1px] relative">
                                     Button
                                 </button>
@@ -219,10 +220,10 @@ export default function BasicElements() {
                                 <button className="btn btn-outline-secondary !rounded-none mr-[-1px] relative">
                                     Button
                                 </button>
-                                <input type='text' className='flex-[1_1_auto] rounded-r-[4px] rounded-l-none border border-border-color bg-bg-dark py-[6px] px-[12px] placeholder:text-text-secondary focus:outline-none' />
+                                <input type='text' className='flex-[1_1_auto] rounded-r-[4px] rounded-l-none border border-border-color bg-content-color py-[6px] px-[12px] placeholder:text-font-color-100 focus:outline-none' />
                             </div>
                             <div className='relative w-full flex flex-wrap min-h-[35px] '>
-                                <input type='text' placeholder="Recipient's username" className='flex-[1_1_auto] rounded-l-[4px] rounded-r-none border border-border-color bg-bg-dark py-[6px] px-[12px] placeholder:text-text-secondary focus:outline-none' />
+                                <input type='text' placeholder="Recipient's username" className='flex-[1_1_auto] rounded-l-[4px] rounded-r-none border border-border-color bg-content-color py-[6px] px-[12px] placeholder:text-font-color-100 focus:outline-none' />
                                 <button className="btn btn-outline-secondary !rounded-none ml-[-1px] relative">
                                     Button
                                 </button>
@@ -241,10 +242,10 @@ export default function BasicElements() {
                                     <option>Action 2</option>
                                     <option>Action 3</option>
                                 </select>
-                                <input type='text' className='flex-[1_1_auto] rounded-r-[4px] rounded-l-none border border-border-color bg-bg-dark py-[6px] px-[12px] placeholder:text-text-secondary focus:outline-none' />
+                                <input type='text' className='flex-[1_1_auto] rounded-r-[4px] rounded-l-none border border-border-color bg-content-color py-[6px] px-[12px] placeholder:text-font-color-100 focus:outline-none' />
                             </div>
                             <div className='relative w-full flex flex-wrap min-h-[35px] '>
-                                <input type='text' className='flex-[1_1_auto] rounded-l-[4px] rounded-r-none border border-border-color bg-bg-dark py-[6px] px-[12px] placeholder:text-text-secondary focus:outline-none' />
+                                <input type='text' className='flex-[1_1_auto] rounded-l-[4px] rounded-r-none border border-border-color bg-content-color py-[6px] px-[12px] placeholder:text-font-color-100 focus:outline-none' />
                                 <select className="flex items-center justify-center border border-border-color rounded-r-[4px] ml-[-1px] py-[6px] px-[12px] bg-body-color cursor-pointer focus:outline-none">
                                     <option>Action 1</option>
                                     <option>Action 2</option>
@@ -260,19 +261,19 @@ export default function BasicElements() {
                                 <button className="btn btn-outline-secondary !leading-[1] !rounded-r-none mr-[-1px] relative z-[1]">
                                     Upload
                                 </button>
-                                <div className='relative flex-[1_1_auto] rounded-r-[4px] rounded-l-none border border-border-color bg-bg-dark py-[6px] px-[12px]'>
+                                <div className='relative flex-[1_1_auto] rounded-r-[4px] rounded-l-none border border-border-color bg-content-color py-[6px] px-[12px]'>
                                     <input type='file' className='opacity-0 absolute w-full h-full left-0 top-0 z-[1] cursor-pointer focus:outline-none' />
                                     <label className='flex h-full items-center'>Choose File</label>
-                                    <span className="flex items-center justify-center absolute right-0 top-0 bottom-0 border-l border-border-color py-[6px] px-[12px] bg-body-color">
+                                    <span className="flex items-center justify-center absolute right-0 top-0 bottom-0 border-s border-border-color py-[6px] px-[12px] bg-body-color">
                                         Browse
                                     </span>
                                 </div>
                             </div>
                             <div className='relative w-full flex flex-wrap min-h-[35px] '>
-                                <div className='relative flex-[1_1_auto] rounded-l-[4px] rounded-r-none border border-border-color bg-bg-dark py-[6px] px-[12px]'>
+                                <div className='relative flex-[1_1_auto] rounded-l-[4px] rounded-r-none border border-border-color bg-content-color py-[6px] px-[12px]'>
                                     <input type='file' className='opacity-0 absolute w-full h-full left-0 top-0 z-[1] cursor-pointer focus:outline-none' />
                                     <label className='flex h-full items-center'>Choose File</label>
-                                    <span className="flex items-center justify-center absolute right-0 top-0 bottom-0 border-l border-border-color py-[6px] px-[12px] bg-body-color">
+                                    <span className="flex items-center justify-center absolute right-0 top-0 bottom-0 border-s border-border-color py-[6px] px-[12px] bg-body-color">
                                         Browse
                                     </span>
                                 </div>

@@ -185,7 +185,7 @@ export default function Taskboard() {
                                                                 <p className='text-[14px]/[17px] font-bold uppercase'>{task.title}</p>
                                                                 <div className='flex items-center gap-2'>
                                                                     <button>
-                                                                        <IconEdit className='text-text-secondary stroke-[1.5] w-[20px] h-[20px]' />
+                                                                        <IconEdit className='text-font-color-100 stroke-[1.5] w-[20px] h-[20px]' />
                                                                     </button>
                                                                     <button>
                                                                         <IconTrash className='text-danger stroke-[1.5] w-[20px] h-[20px]' />

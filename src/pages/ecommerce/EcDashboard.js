@@ -693,7 +693,7 @@ export default function EcDashboard() {
                     <div className='card bg-card-color md:p-20 p-15 rounded-md sm:h-[410px] h-[250px]'>
                         <VectorMap
                             map={worldMill}
-                            backgroundColor='var(--bg-dark)'
+                            backgroundColor='var(--card-color)'
                             regionStyle={{
                                 initial: {
                                     fill: "var(--font-color-200)"
