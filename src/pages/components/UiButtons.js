@@ -112,7 +112,7 @@ export default function UiButtons() {
             </button>
           </div>
         </div>
-        <div className='pb-20 mb-20 border-b border-border flex flex-wrap gap-10'>
+        <div className='pb-20 mb-20 border-b border-border-color flex flex-wrap gap-10'>
           <div className='btn-group'>
             <button className='btn btn-outline-secondary'>
               1
@@ -145,10 +145,10 @@ export default function UiButtons() {
           </div>
         </div>
         <div className='relative w-full overflow-hidden'>
-          <button aria-label="search icon" className="absolute top-[50%] translate-y-[-50%] border-r border-r-border left-[1px] py-[6px] px-[12px] min-h-[33px] bg-bg-light rounded-l-[3px]">
-            <IconSend className="text-text-primary w-[20px] h-[20px] stroke-[1.5]" />
+          <button aria-label="search icon" className="absolute top-[50%] translate-y-[-50%] border-e border-e-border-color start-[1px] py-[6px] px-[12px] min-h-[33px] bg-content-color rounded-l-[3px]">
+            <IconSend className="text-font-color w-[20px] h-[20px] stroke-[1.5]" />
           </button>
-          <input type='text' id='chatInput' name='chatInput' placeholder='Enter text here...' className='bg-bg-dark border border-border w-full py-[6px] pr-[12px] pl-60  min-h-[35px] rounded-[4px] placeholder:text-text-secondary focus:outline-none' />
+          <input type='text' id='chatInput' name='chatInput' placeholder='Enter text here...' className='bg-content-color border border-border-color w-full py-[6px] pe-[12px] ps-60  min-h-[35px] rounded-[4px] placeholder:text-font-color-100 focus:outline-none' />
         </div>
       </div>
       <div className='card bg-card-color rounded-md md:p-20 p-15'>
@@ -177,7 +177,7 @@ export default function UiButtons() {
             Loading
           </button>
           <button className='bg-border-color rounded-full w-[36px] h-[36px] flex items-center justify-center relative'>
-            <IconBell className="stroke-[1.5] text-text-primary" />
+            <IconBell className="stroke-[1.5] text-font-color" />
             <span className="flex absolute w-[14px] h-[14px] -top-[2px] -right-[2px] border-2 border-border-color rounded-full">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-font-color opacity-75"></span>
               <span className="relative inline-flex rounded-full w-10 h-10 bg-font-color"></span>

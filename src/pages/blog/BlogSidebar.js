@@ -57,9 +57,9 @@ export default function BlogSidebar() {
             <div className='bg-card-color rounded-md md:p-20 p-15 mb-4'>
                 <div className='relative w-full overflow-hidden'>
                     <button aria-label="search icon" className="absolute top-[50%] translate-y-[-50%] border-s border-border-color end-[1px] py-[6px] px-[12px] min-h-[33px] rounded-e-md">
-                        <IconSearch className="text-text-primary w-[20px] h-[20px]" />
+                        <IconSearch className="text-font-color w-[20px] h-[20px]" />
                     </button>
-                    <input type='text' id='search' name='search' placeholder='Search...' className='border border-border-color w-full py-[6px] ps-[12px] pe-60 min-h-[35px] rounded-md focus:outline-none' />
+                    <input type='text' id='search' name='search' placeholder='Search...' className='bg-content-color border border-border-color w-full py-[6px] ps-[12px] pe-60 min-h-[35px] rounded-md focus:outline-none' />
                 </div>
             </div>
             <div className='mb-4'>
@@ -210,8 +210,8 @@ export default function BlogSidebar() {
                 </div>
                 <div className='bg-card-color rounded-md md:p-20 p-15'>
                     <div className='relative w-full overflow-hidden mb-1'>
-                        <input type='text' id='chatInput' name='chatInput' placeholder='Enter Email...' className='bg-bg-dark border border-border w-full py-[6px] pl-[12px] pr-60  min-h-[35px] rounded-[4px] placeholder:text-text-secondary focus:outline-none' />
-                        <button aria-label="search icon" className="absolute top-[50%] translate-y-[-50%] border-l border-l-border right-[1px] py-[6px] px-[12px] min-h-[33px] bg-bg-light rounded-r-[3px]">
+                        <input type='text' id='chatInput' name='chatInput' placeholder='Enter Email...' className='bg-content-color border border-border-color w-full py-[6px] ps-[12px] pe-60  min-h-[35px] rounded-[4px] placeholder:text-font-color-100 focus:outline-none' />
+                        <button aria-label="search icon" className="absolute top-[50%] translate-y-[-50%] border-s border-s-border-color end-[1px] py-[6px] px-[12px] min-h-[33px] bg-content-color rounded-e-[3px]">
                             <IconSend className="w-[20px] h-[20px]" />
                         </button>
                     </div>

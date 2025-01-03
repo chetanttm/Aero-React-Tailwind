@@ -53,6 +53,10 @@ import ecommerce14 from './ecommerce14.png'
 import ecommerce15 from './ecommerce15.png'
 import ecommerce16 from './ecommerce16.png'
 import placeholder from './placeholder.jpg'
+import blogImage1 from './blog_image_1.jpg'
+import blogImage2 from './blog_image_2.jpg'
+import blogImage3 from './blog_image_3.jpg'
+import blogImage4 from './blog_image_4.jpg'
 
 export {
     companyLogo,
@@ -110,4 +114,8 @@ export {
     ecommerce15,
     ecommerce16,
     placeholder,
+    blogImage1,
+    blogImage2,
+    blogImage3,
+    blogImage4,
 };

@@ -180,7 +180,7 @@ export default function UiIcons() {
             {iconItem.map((item, key) => (
               <div key={key} className='flex items-center gap-15'>
                 {item.icon}
-                <div className='text-[16px] font-medium text-text-secondary'>
+                <div className='text-[16px] font-medium text-font-color-100'>
                   {`<${item.name} />`}
                 </div>
               </div>

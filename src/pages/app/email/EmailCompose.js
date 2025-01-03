@@ -74,7 +74,7 @@ export default function EmailCompose() {
                         <div className='mb-30'>
                             <ReactQuill
                                 modules={{ toolbar: toolbarOptions }}
-                                className='bg-bg-light'
+                                className='bg-card-color'
                                 defaultValue="
                                 <p>
                                     Hello There !
