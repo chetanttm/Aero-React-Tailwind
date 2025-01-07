@@ -22,6 +22,7 @@
     --black: #000;
     --black-50: rgba(0, 0, 0, 0.5);
     --black-100: #989898;
+    --black-200: #212529;
     --dark: #2d3238;
     --grey: #6c757d;
     --success: #198754;
@@ -30,9 +31,11 @@
     --info: #4FB8C9;
     --danger: #dc3545;
     --danger-50: #dc354526;
+    --danger-100: #c82333;
     --sky: #55acee;
     --sky-50: rgba(85, 172, 238, 0.5);
     --blue: #0d6efd;
+    --blue-100: #0056b3;
     --purple: #6f42c1;
     --purple-50: #6f42c180;
     --pink: #e47297;
@@ -235,6 +238,11 @@ input[type=number] {
     line-height: 1.2;
     text-align: center;
     transition: 0.3s all ease-in-out;
+}
+
+.btn.btn-small {
+    padding: 5px 10px;
+    font-size: 14px;
 }
 
 .btn:hover {
@@ -1124,6 +1132,10 @@ table.table-dark {
 
 .react-data-table .rdt_TableCol {
     padding: 8px 16px;
+}
+
+.react-data-table :is(header, .rdt_TableHeader) {
+    background-color: transparent;
 }
 
 .react-data-table.header-primary .rdt_TableHeadRow {
