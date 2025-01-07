@@ -44,6 +44,14 @@ import BasicElements from "./pages/forms/BasicElements";
 import FormValidation from "./pages/forms/FormValidation";
 import DragDropUpload from "./pages/forms/DragDropUpload";
 import QuillEditor from "./pages/forms/QuillEditor";
+import BasicTable from "./pages/tables/BasicTable";
+import NormalTable from "./pages/tables/NormalTable";
+import EditableTable from "./pages/tables/EditableTable";
+import TableColor from "./pages/tables/TableColor";
+import TableFilter from "./pages/tables/TableFilter";
+import DataTable from "./pages/tables/DataTable";
+import ApexChart from "./pages/charts/ApexChart";
+import Knob from "./pages/charts/Knob";
 
 export default function App() {
 
@@ -90,6 +98,14 @@ export default function App() {
           <Route path="/form-validation" element={<FormValidation />} />
           <Route path="/drag-drop-upload" element={<DragDropUpload />} />
           <Route path="/quill-editor" element={<QuillEditor />} />
+          <Route path="/basic-tabel" element={<BasicTable />} />
+          <Route path="/normal-tabel" element={<NormalTable />} />
+          <Route path="/editable-tabel" element={<EditableTable />} />
+          <Route path="/tabel-color" element={<TableColor />} />
+          <Route path="/tabel-filter" element={<TableFilter />} />
+          <Route path="/data-table" element={<DataTable />} />
+          <Route path="/apex-chart" element={<ApexChart />} />
+          <Route path="/knob" element={<Knob />} />
         </Route>
       </Routes>
     </BrowserRouter>

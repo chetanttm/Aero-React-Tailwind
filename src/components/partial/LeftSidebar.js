@@ -8,6 +8,7 @@ import {
     IconAppsFilled,
     IconArrowNarrowRight,
     IconArticleFilled,
+    IconChartCandleFilled,
     IconChevronRight,
     IconClipboardFilled,
     IconDiamondFilled,
@@ -16,6 +17,7 @@ import {
     IconHomeFilled,
     IconMenu2,
     IconShoppingCartFilled,
+    IconTableFilled,
     IconUserFilled,
 } from '@tabler/icons-react';
 
@@ -211,6 +213,50 @@ export default function LeftSidebar({ miniSidebarToggle }) {
                 {
                     link: "Quill Editor",
                     url: "/quill-editor",
+                },
+            ],
+        },
+        {
+            icon: IconTableFilled,
+            link: "Tables",
+            children: [
+                {
+                    link: "Basic Table",
+                    url: "/basic-tabel",
+                },
+                {
+                    link: "Normal Table",
+                    url: "/normal-tabel",
+                },
+                {
+                    link: "Editable Table",
+                    url: "/editable-tabel",
+                },
+                {
+                    link: "Table Color",
+                    url: "/tabel-color",
+                },
+                {
+                    link: "Table Filter",
+                    url: "/tabel-filter",
+                },
+                {
+                    link: "Data Table",
+                    url: "/data-table",
+                },
+            ],
+        },
+        {
+            icon: IconChartCandleFilled,
+            link: "Charts",
+            children: [
+                {
+                    link: "Apex Chart",
+                    url: "/apex-chart",
+                },
+                {
+                    link: "Knob",
+                    url: "/knob",
                 },
             ],
         },
