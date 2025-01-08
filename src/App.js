@@ -52,6 +52,7 @@ import TableFilter from "./pages/tables/TableFilter";
 import DataTable from "./pages/tables/DataTable";
 import ApexChart from "./pages/charts/ApexChart";
 import Knob from "./pages/charts/Knob";
+import WidgetApp from "./pages/widgets/WidgetApp";
 
 export default function App() {
 
@@ -106,6 +107,7 @@ export default function App() {
           <Route path="/data-table" element={<DataTable />} />
           <Route path="/apex-chart" element={<ApexChart />} />
           <Route path="/knob" element={<Knob />} />
+          <Route path="/widget-app" element={<WidgetApp />} />
         </Route>
       </Routes>
     </BrowserRouter>

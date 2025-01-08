@@ -274,7 +274,7 @@ export default function AllFiles() {
                         <small>of 1Tb</small>
                     </h2>
                     <div className="progress overflow-hidden h-[8px] bg-border-color rounded-full">
-                        <div className="progress-bar w-[55%] bg-purple-600 h-full"></div>
+                        <div className="progress-bar w-[55%] bg-purple h-full"></div>
                     </div>
                 </div>
                 <div className='card relative overflow-hidden bg-card-color md:p-20 p-15 rounded-md group'>

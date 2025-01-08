@@ -16,6 +16,7 @@ import {
     IconFolderFilled,
     IconHomeFilled,
     IconMenu2,
+    IconPuzzleFilled,
     IconShoppingCartFilled,
     IconTableFilled,
     IconUserFilled,
@@ -257,6 +258,20 @@ export default function LeftSidebar({ miniSidebarToggle }) {
                 {
                     link: "Knob",
                     url: "/knob",
+                },
+            ],
+        },
+        {
+            icon: IconPuzzleFilled,
+            link: "Widgets",
+            children: [
+                {
+                    link: "Apps Widgets",
+                    url: "/widget-app",
+                },
+                {
+                    link: "Data Widgets",
+                    url: "/widget-data",
                 },
             ],
         },

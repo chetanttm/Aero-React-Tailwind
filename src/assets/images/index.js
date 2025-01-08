@@ -12,6 +12,8 @@ import avatar9 from './avatar9.jpg'
 import avatar10 from './avatar10.jpg'
 import avatar11 from './avatar11.jpg'
 import avatar12 from './avatar12.jpg'
+import avatar13 from './avatar13.jpg'
+import avatar14 from './avatar14.jpg'
 import gallery1 from './gallery1.jpg'
 import gallery2 from './gallery2.jpg'
 import gallery3 from './gallery3.jpg'
@@ -73,6 +75,8 @@ export {
     avatar10,
     avatar11,
     avatar12,
+    avatar13,
+    avatar14,
     gallery1,
     gallery2,
     gallery3,
