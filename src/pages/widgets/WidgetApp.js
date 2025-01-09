@@ -1,26 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Breadcrumb from '../../components/common/Breadcrumb'
 import ReactApexChart from 'react-apexcharts'
 import { Link } from 'react-router-dom'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import ReactDataTable from 'react-data-table-component';
 import {
     IconBrandBehance,
     IconBrandDribbble,
     IconBrandFacebook,
     IconBrandGithub,
+    IconBrandGoogle,
+    IconBrandGoogleFilled,
     IconBrandInstagram,
     IconBrandLinkedin,
     IconBrandPinterest,
+    IconBrandTwitter,
     IconBrandX,
+    IconBrandYoutubeFilled,
+    IconCaretDownFilled,
     IconDots,
     IconEyeFilled,
+    IconHeartFilled,
     IconMenu2,
     IconMessageFilled,
+    IconQuoteFilled,
     IconSearch,
+    IconSend2,
     IconThumbUpFilled,
+    IconTrash,
     IconUserFilled,
     IconX,
 } from '@tabler/icons-react'
 import {
+    avatar1,
     avatar11,
     avatar12,
     avatar13,
@@ -29,10 +41,16 @@ import {
     avatar3,
     avatar4,
     avatar5,
+    avatar6,
+    gallery1,
     gallery10,
     gallery11,
     gallery12,
+    gallery2,
+    gallery3,
 } from '../../assets/images'
+import { toast, ToastContainer } from 'react-toastify'
+import { Autoplay } from 'swiper/modules'
 
 export default function WidgetApp() {
 
@@ -178,6 +196,128 @@ export default function WidgetApp() {
             name: "Add New Contact",
             comment: "maryamamiri@gmail.com",
             date: "1 months ago.",
+        },
+    ]
+
+    const [todoList, setTodoList] = useState([
+        "Weekly Bigbazar Shopping",
+        "Pay the electricity bills",
+        "Contrary to popular belief, Lorem Ipsum is not simply random text",
+        "Make dinner reservation",
+        "All the Lorem Ipsum generators on the Internet",
+        "Many desktop publishing packages and web page editors"
+    ]);
+    const [newTodo, setNewTodo] = useState('');
+    const [error, setError] = useState('');
+
+    const notifyWithType = (message, type) => {
+        toast(message, {
+            type: type,
+        });
+    };
+
+    const handleAddTodo = () => {
+        if (newTodo.trim() === '') {
+            setError("Input can't be empty!");
+            return;
+        }
+        setTodoList([...todoList, newTodo]);
+        setNewTodo('');
+        setError('');
+        notifyWithType("Todo added successfully!", "success");
+    };
+
+    const handleDeleteTodo = (index) => {
+        const newList = [...todoList];
+        newList.splice(index, 1);
+        setTodoList(newList);
+        notifyWithType("Todo deleted successfully!", "error");
+    };
+
+    const columnsFilter = [
+        {
+            name: 'Media',
+            selector: row => row.media,
+        },
+        {
+            name: 'Name',
+            selector: row => row.name,
+            cell: row =>
+                <div>
+                    <p className="text-[16px]/[19.2px]">{row.name}</p>
+                    <p className="text-font-color-100">{row.location}</p>
+                </div>,
+            sortable: true,
+        },
+        {
+            name: 'Like',
+            selector: row => row.like,
+            sortable: true,
+        },
+        {
+            name: 'Comment',
+            selector: row => row.comment,
+            sortable: true,
+        },
+        {
+            name: 'Share',
+            selector: row => row.share,
+            sortable: true,
+        },
+        {
+            name: 'Member',
+            selector: row => row.member,
+            cell: row =>
+                <span className='px-2 py-[3px] inline-block rounded bg-success text-white text-[12px]/[1] font-bold'>{row.member}</span>,
+            sortable: true,
+        },
+    ];
+
+    const dataFilter = [
+        {
+            media: <IconBrandLinkedin className="w-[40px] h-[40px] bg-blue rounded-full text-white p-2 stroke-[1.5]" />,
+            name: 'LINKED IN',
+            location: 'Florida, United States',
+            like: '19K',
+            comment: '14K',
+            share: '10K',
+            member: 2341,
+        },
+        {
+            media: <IconBrandTwitter className="w-[40px] h-[40px] bg-sky rounded-full text-white p-2 stroke-[1.5]" />,
+            name: 'TWITTER',
+            location: 'Arkansas, United States',
+            like: '7K',
+            comment: '11K',
+            share: '21K',
+            member: 952,
+        },
+        {
+            media: <IconBrandFacebook className="w-[40px] h-[40px] bg-blue rounded-full text-white p-2 stroke-[1.5]" />,
+            name: 'FACEBOOK',
+            location: 'Illunois, United States',
+            like: '15K',
+            comment: '18K',
+            share: '8K',
+            member: 6127,
+        },
+        {
+            media: <IconBrandGoogleFilled className="w-[40px] h-[40px] bg-red-500 rounded-full text-white p-2 stroke-[1.5]" />,
+            name: 'GOOGLE PLUS',
+            location: 'Arizona, United States',
+            like: '15K',
+            comment: '18K',
+            share: '154K',
+            member: 325,
+        },
+        {
+            media: <IconBrandYoutubeFilled className="w-[40px] h-[40px] bg-red-700 rounded-full text-white p-2 stroke-[1.5]" />,
+            name: 'YOUTUBE',
+            location: 'Alaska, United States',
+            like: '15K',
+            comment: '18K',
+            share: '200',
+            member: 160,
         },
     ]
 
@@ -540,6 +680,609 @@ export default function WidgetApp() {
                         <span>1,870 USD</span>
                         <small className="text-font-color-100">Budget / Salary</small>
                         <small className="text-danger">10 Days Remaining</small>
+                    </div>
+                </div>
+            </div>
+            <div className='grid lg:grid-cols-2 grid-cols-1 gap-4 mb-4'>
+                <div>
+                    <div className='flex items-center justify-between gap-2 mb-10'>
+                        <h2 className='flex items-center gap-5 uppercase'>
+                            <strong className='text-primary flex items-center'>
+                                ToDo
+                            </strong>
+                            List
+                        </h2>
+                        <div className='flex items-center gap-2'>
+                            <button>
+                                <IconDots />
+                            </button>
+                            <button>
+                                <IconX />
+                            </button>
+                        </div>
+                    </div>
+                    <div className='card bg-card-color md:p-20 p-15 rounded-md'>
+                        <ToastContainer autoClose={3000} />
+                        <div className='flex items-stretch gap-2'>
+                            <div className='form-control flex-1'>
+                                <input
+                                    type='text'
+                                    id='TodoInput1'
+                                    className='form-input'
+                                    placeholder="What you need to do, sir?"
+                                    value={newTodo}
+                                    onChange={(e) => {
+                                        setNewTodo(e.target.value);
+                                        setError('');
+                                    }}
+                                />
+                            </div>
+                            <button className='btn btn-success' onClick={handleAddTodo}>
+                                Add Todo
+                            </button>
+                        </div>
+                        {error && <div className="text-danger text-[14px]/[20px]">{error}</div>}
+                        <ul className='mt-6'>
+                            {todoList.map((todo, index) => (
+                                <li key={index} className='pb-4 mb-4 flex items-center justify-between gap-2 border-b border-border-color last:border-none last:pb-0 last:mb-0'>
+                                    <div className="form-check todo">
+                                        <input type="checkbox" id={'todoItem' + index} className="form-check-input check-line" />
+                                        <label htmlFor={'todoItem' + index} className="form-check-label !text-[16px]/[24px]">{todo}</label>
+                                    </div>
+                                    <button className='bg-danger rounded-full text-white p-5' onClick={() => handleDeleteTodo(index)}>
+                                        <IconTrash className='w-[16px] h-[16px]' />
+                                    </button>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div className='flex items-center justify-between gap-2 mb-10'>
+                        <h2 className='flex items-center gap-5 uppercase'>
+                            <strong className='text-primary flex items-center'>
+                                Chat
+                            </strong>
+                            Box
+                        </h2>
+                        <div className='flex items-center gap-2'>
+                            <button>
+                                <IconDots />
+                            </button>
+                            <button>
+                                <IconX />
+                            </button>
+                        </div>
+                    </div>
+                    <div className='card bg-card-color md:p-20 p-15 rounded-md'>
+                        <ul className='max-h-[calc(418px-50px-40px)] overflow-auto no-scrollbar'>
+                            <li className='mb-3 flex gap-3'>
+                                <img src={avatar3} alt='user profile' className='w-[40px] h-[40px] min-w-[40px] rounded-full' />
+                                <ul className='flex flex-col gap-1'>
+                                    <li className='flex'>
+                                        <small>Frank 11:00AM</small>
+                                    </li>
+                                    <li className='flex'>
+                                        <span className="px-15 py-5 rounded text-white bg-blue">Hello, Michael</span>
+                                    </li>
+                                    <li className='flex'>
+                                        <span className="px-15 py-5 rounded text-white bg-blue">How are you!</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li className='mb-3 flex gap-3 justify-end'>
+                                <ul className='flex flex-col gap-1 justify-end'>
+                                    <li className='flex justify-end'>
+                                        <small>11:10AM</small>
+                                    </li>
+                                    <li className='flex'>
+                                        <span className="px-15 py-5 rounded bg-border-color">Hello, Frank</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li className='mb-3 flex gap-3 justify-end'>
+                                <ul className='flex flex-col gap-1 justify-end'>
+                                    <li className='flex justify-end'>
+                                        <small>11:11AM</small>
+                                    </li>
+                                    <li className='flex'>
+                                        <span className="px-15 py-5 rounded bg-border-color">I'm fine what about you?</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li className='mb-3 flex gap-3'>
+                                <img src={avatar2} alt='user profile' className='w-[40px] h-[40px] min-w-[40px] rounded-full' />
+                                <ul className='flex flex-col gap-1'>
+                                    <li className='flex'>
+                                        <small>Gary 11:13AM</small>
+                                    </li>
+                                    <li className='flex'>
+                                        <span className="px-15 py-5 rounded text-white bg-info">Hello, Michael and Frank</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li className='mb-3 flex gap-3'>
+                                <img src={avatar5} alt='user profile' className='w-[40px] h-[40px] min-w-[40px] rounded-full' />
+                                <ul className='flex flex-col gap-1'>
+                                    <li className='flex'>
+                                        <small>Hossein 11:14AM</small>
+                                    </li>
+                                    <li className='flex'>
+                                        <span className="px-15 py-5 rounded text-white bg-blue">Hello, team</span>
+                                    </li>
+                                    <li className='flex'>
+                                        <span className="px-15 py-5 rounded text-white bg-blue">Please let me know your requirements.</span>
+                                    </li>
+                                    <li className='flex'>
+                                        <span className="px-15 py-5 rounded text-white bg-blue">How would like to connect with us?</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li className='mb-3 flex gap-3 justify-end'>
+                                <ul className='flex flex-col gap-1 justify-end'>
+                                    <li className='flex justify-end'>
+                                        <small>11:15AM</small>
+                                    </li>
+                                    <li className='flex'>
+                                        <span className="px-15 py-5 rounded bg-border-color">Hello, Hossein</span>
+                                    </li>
+                                    <li className='flex'>
+                                        <span className="px-15 py-5 rounded bg-border-color">Meeting on conference room at 12:00PM</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div className='form-control flex items-stretch pt-3'>
+                            <button className='flex items-center gap-1 px-[18px] py-1 rounded-s-lg bg-grey text-white'>
+                                Add
+                                <IconCaretDownFilled className='w-[18px] h-[18px] min-w-[18px]' />
+                            </button>
+                            <input type='text' placeholder='Enter text here...' className='form-input !rounded-none' />
+                            <button className='flex items-center gap-1 px-3 py-1 rounded-e-lg border border-border-color'>
+                                <IconSend2 />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='grid lg:grid-cols-3 grid-cols-1 gap-4 mb-4'>
+                <Swiper
+                    modules={[Autoplay]}
+                    slidesPerView={1}
+                    spaceBetween={10}
+                    autoplay={{
+                        delay: 1800,
+                    }}
+                    loop
+                    speed={1000}
+                    className='w-full'
+                >
+                    <SwiperSlide>
+                        <div className='card bg-card-color md:p-20 p-15 rounded-md flex flex-col items-center justify-center text-center'>
+                            <img src={avatar1} alt="avatar" className='w-[45px] h-[45px] min-w-[45px] rounded-full shadow-shadow-sm' />
+                            <div className="my-2 font-bold">@Hossein</div>
+                            <div className='flex flex-wrap items-center justify-center text-center gap-1'><IconQuoteFilled /> Lorem Ipsum is simply <Link to="#" className='text-sky'>@typesetting</Link> industry. Lorem <Link to="#" className='text-sky'>@Ipsum</Link> has been the industry's standard</div>
+                            <div className='flex items-center justify-center w-full mt-6'>
+                                <div className='flex-1 text-center flex flex-col items-center justify-center gap-1'>
+                                    <IconHeartFilled />
+                                    <p className="text-font-color-100">Like (5K)</p>
+                                </div>
+                                <div className='flex-1 text-center flex flex-col items-center justify-center gap-1'>
+                                    <IconMessageFilled />
+                                    <p className="text-font-color-100">Twitt (250)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className='card bg-card-color md:p-20 p-15 rounded-md flex flex-col items-center justify-center text-center'>
+                            <img src={avatar2} alt="avatar" className='w-[45px] h-[45px] min-w-[45px] rounded-full shadow-shadow-sm' />
+                            <div className="my-2 font-bold">@Frank</div>
+                            <div className='flex flex-wrap items-center justify-center text-center gap-1'><IconQuoteFilled /> Lorem Ipsum is simply <Link to="#" className='text-sky'>@typesetting</Link> industry. Lorem <Link to="#" className='text-sky'>@Ipsum</Link> has been the industry's standard</div>
+                            <div className='flex items-center justify-center w-full mt-6'>
+                                <div className='flex-1 text-center flex flex-col items-center justify-center gap-1'>
+                                    <IconHeartFilled />
+                                    <p className="text-font-color-100">Like (10K)</p>
+                                </div>
+                                <div className='flex-1 text-center flex flex-col items-center justify-center gap-1'>
+                                    <IconMessageFilled />
+                                    <p className="text-font-color-100">Twitt (250)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
+                <Swiper
+                    modules={[Autoplay]}
+                    slidesPerView={1}
+                    spaceBetween={10}
+                    autoplay={{
+                        delay: 2600,
+                    }}
+                    loop
+                    speed={1000}
+                    className='w-full'
+                >
+                    <SwiperSlide>
+                        <div className='card bg-card-color md:p-20 p-15 rounded-md flex flex-col items-center justify-center text-center'>
+                            <img src={avatar3} alt="avatar" className='w-[45px] h-[45px] min-w-[45px] rounded-full shadow-shadow-sm' />
+                            <div className="my-2 font-bold">@Hossein</div>
+                            <div className='flex flex-wrap items-center justify-center text-center gap-1'><IconQuoteFilled /> Lorem Ipsum is simply <Link to="#" className='text-sky'>@typesetting</Link> industry. Lorem <Link to="#" className='text-sky'>@Ipsum</Link> has been the industry's standard</div>
+                            <div className='flex items-center justify-center w-full mt-6'>
+                                <div className='flex-1 text-center flex flex-col items-center justify-center gap-1'>
+                                    <IconHeartFilled />
+                                    <p className="text-font-color-100">Like (155K)</p>
+                                </div>
+                                <div className='flex-1 text-center flex flex-col items-center justify-center gap-1'>
+                                    <IconMessageFilled />
+                                    <p className="text-font-color-100">Twitt (20)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className='card bg-card-color md:p-20 p-15 rounded-md flex flex-col items-center justify-center text-center'>
+                            <img src={avatar4} alt="avatar" className='w-[45px] h-[45px] min-w-[45px] rounded-full shadow-shadow-sm' />
+                            <div className="my-2 font-bold">@Frank</div>
+                            <div className='flex flex-wrap items-center justify-center text-center gap-1'><IconQuoteFilled /> Lorem Ipsum is simply <Link to="#" className='text-sky'>@typesetting</Link> industry. Lorem <Link to="#" className='text-sky'>@Ipsum</Link> has been the industry's standard</div>
+                            <div className='flex items-center justify-center w-full mt-6'>
+                                <div className='flex-1 text-center flex flex-col items-center justify-center gap-1'>
+                                    <IconHeartFilled />
+                                    <p className="text-font-color-100">Like (510K)</p>
+                                </div>
+                                <div className='flex-1 text-center flex flex-col items-center justify-center gap-1'>
+                                    <IconMessageFilled />
+                                    <p className="text-font-color-100">Twitt (2150)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
+                <Swiper
+                    modules={[Autoplay]}
+                    slidesPerView={1}
+                    spaceBetween={10}
+                    autoplay={{
+                        delay: 1200,
+                    }}
+                    loop
+                    speed={1000}
+                    className='w-full'
+                >
+                    <SwiperSlide>
+                        <div className='card bg-card-color md:p-20 p-15 rounded-md flex flex-col items-center justify-center text-center'>
+                            <img src={avatar5} alt="avatar" className='w-[45px] h-[45px] min-w-[45px] rounded-full shadow-shadow-sm' />
+                            <div className="my-2 font-bold">@Hossein</div>
+                            <div className='flex flex-wrap items-center justify-center text-center gap-1'><IconQuoteFilled /> Lorem Ipsum is simply <Link to="#" className='text-sky'>@typesetting</Link> industry. Lorem <Link to="#" className='text-sky'>@Ipsum</Link> has been the industry's standard</div>
+                            <div className='flex items-center justify-center w-full mt-6'>
+                                <div className='flex-1 text-center flex flex-col items-center justify-center gap-1'>
+                                    <IconHeartFilled />
+                                    <p className="text-font-color-100">Like (50K)</p>
+                                </div>
+                                <div className='flex-1 text-center flex flex-col items-center justify-center gap-1'>
+                                    <IconMessageFilled />
+                                    <p className="text-font-color-100">Twitt (550)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className='card bg-card-color md:p-20 p-15 rounded-md flex flex-col items-center justify-center text-center'>
+                            <img src={avatar6} alt="avatar" className='w-[45px] h-[45px] min-w-[45px] rounded-full shadow-shadow-sm' />
+                            <div className="my-2 font-bold">@Frank</div>
+                            <div className='flex flex-wrap items-center justify-center text-center gap-1'><IconQuoteFilled /> Lorem Ipsum is simply <Link to="#" className='text-sky'>@typesetting</Link> industry. Lorem <Link to="#" className='text-sky'>@Ipsum</Link> has been the industry's standard</div>
+                            <div className='flex items-center justify-center w-full mt-6'>
+                                <div className='flex-1 text-center flex flex-col items-center justify-center gap-1'>
+                                    <IconHeartFilled />
+                                    <p className="text-font-color-100">Like (350K)</p>
+                                </div>
+                                <div className='flex-1 text-center flex flex-col items-center justify-center gap-1'>
+                                    <IconMessageFilled />
+                                    <p className="text-font-color-100">Twitt (2650)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
+            </div>
+            <div className='grid lg:grid-cols-6 ssm:grid-cols-3 grid-cols-1 gap-4 mb-4'>
+                <div className='card bg-card-color md:p-20 p-15 rounded-md flex flex-col items-center justify-center text-center group'>
+                    <IconBrandFacebook className='text-[#3b5998] w-[36px] h-[36px] min-w-[36px] transition-all duration-300 group-hover:opacity-40 group-hover:rotate-[-32deg] group-hover:scale-[1.4]' />
+                    <div className='mt-4'>
+                        <span>Like</span>
+                        <div className="text-[28px]/[1] mt-2">123</div>
+                    </div>
+                </div>
+                <div className='card bg-card-color md:p-20 p-15 rounded-md flex flex-col items-center justify-center text-center group'>
+                    <IconBrandInstagram className='text-[#fb3958] w-[36px] h-[36px] min-w-[36px] transition-all duration-300 group-hover:opacity-40 group-hover:rotate-[-32deg] group-hover:scale-[1.4]' />
+                    <div className='mt-4'>
+                        <span>Followers</span>
+                        <div className="text-[28px]/[1] mt-2">231</div>
+                    </div>
+                </div>
+                <div className='card bg-card-color md:p-20 p-15 rounded-md flex flex-col items-center justify-center text-center group'>
+                    <IconBrandX className='text-black w-[36px] h-[36px] min-w-[36px] transition-all duration-300 group-hover:opacity-40 group-hover:rotate-[-32deg] group-hover:scale-[1.4]' />
+                    <div className='mt-4'>
+                        <span>Followers</span>
+                        <div className="text-[28px]/[1] mt-2">31</div>
+                    </div>
+                </div>
+                <div className='card bg-card-color md:p-20 p-15 rounded-md flex flex-col items-center justify-center text-center group'>
+                    <IconBrandGoogle className='text-[#dd4b39] w-[36px] h-[36px] min-w-[36px] transition-all duration-300 group-hover:opacity-40 group-hover:rotate-[-32deg] group-hover:scale-[1.4]' />
+                    <div className='mt-4'>
+                        <span>Like</span>
+                        <div className="text-[28px]/[1] mt-2">254</div>
+                    </div>
+                </div>
+                <div className='card bg-card-color md:p-20 p-15 rounded-md flex flex-col items-center justify-center text-center group'>
+                    <IconBrandLinkedin className='text-[#0077B5] w-[36px] h-[36px] min-w-[36px] transition-all duration-300 group-hover:opacity-40 group-hover:rotate-[-32deg] group-hover:scale-[1.4]' />
+                    <div className='mt-4'>
+                        <span>Followers</span>
+                        <div className="text-[28px]/[1] mt-2">2510</div>
+                    </div>
+                </div>
+                <div className='card bg-card-color md:p-20 p-15 rounded-md flex flex-col items-center justify-center text-center group'>
+                    <IconBrandBehance className='text-[#053eff] w-[36px] h-[36px] min-w-[36px] transition-all duration-300 group-hover:opacity-40 group-hover:rotate-[-32deg] group-hover:scale-[1.4]' />
+                    <div className='mt-4'>
+                        <span>Project</span>
+                        <div className="text-[28px]/[1] mt-2">121</div>
+                    </div>
+                </div>
+            </div>
+            <div className='grid lg:grid-cols-3 grid-cols-1 gap-4 mb-4'>
+                <div className='card bg-card-color rounded-md overflow-hidden'>
+                    <div className='flex max-h-[170px] relative before:w-full before:h-full before:absolute before:top-0 before:left-0 before:opacity-80 before:bg-gradient-to-r before:from-[#6f42c1] before:to-[#ffc107]'>
+                        <img src={gallery2} alt='user cover' className='object-cover' />
+                    </div>
+                    <div className='md:p-20 p-15 text-center'>
+                        <div className='relative mt-[-70px] text-center mb-2'>
+                            <img src={avatar1} alt='user' className='w-[80px] h-[80px] min-w-[80px] mx-auto shadow-shadow-sm rounded-full p-[3px] bg-gradient-to-r from-[#6f42c1] to-[#ffc107]' />
+                            <h5 className="mt-3 mb-1 text-[22px]/[30px] font-medium">Eliana Smith</h5>
+                            <span>Designer, Developer, Traveler</span>
+                        </div>
+                        <button className="btn btn-primary">FOLLOW</button>
+                        <div className='mt-6 flex items-center justify-center gap-2'>
+                            <div className='flex-1'>
+                                <h5 className="text-[22px]/[30px] font-medium">128</h5>
+                                <small>Article</small>
+                            </div>
+                            <div className='flex-1'>
+                                <h5 className="text-[22px]/[30px] font-medium">1,528</h5>
+                                <small>Followers</small>
+                            </div>
+                            <div className='flex-1'>
+                                <h5 className="text-[22px]/[30px] font-medium">321</h5>
+                                <small>Following</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='card bg-card-color rounded-md overflow-hidden'>
+                    <div className='flex max-h-[170px] relative before:w-full before:h-full before:absolute before:top-0 before:left-0 before:opacity-80 before:bg-gradient-to-r before:from-[#1cbfd0] before:to-[#6610f2]'>
+                        <img src={gallery3} alt='user cover' className='object-cover' />
+                    </div>
+                    <div className='md:p-20 p-15'>
+                        <div className='relative mt-[-70px] mb-3 flex items-end gap-2'>
+                            <img src={avatar4} alt='user' className='w-[90px] h-[90px] min-w-[90px] shadow-shadow-sm rounded-full p-[3px] bg-gradient-to-r from-[#6610f2] to-[#1cbfd0]' />
+                            <div className='flex flex-col mt-14'>
+                                <h5 className="font-bold leading-normal">Eliana Smith</h5>
+                                <small className='leading-none'>Designer, Developer, Traveler</small>
+                            </div>
+                        </div>
+                        <div className="text-font-color-100 mb-2">Creative UI/UX designer from USA. Working this field since 2010. Completed 500+ UI projects.</div>
+                        <Link to="#" className='uppercase font-bold text-sky'>esmith.com</Link>
+                        <div className='mt-6 flex items-center justify-center gap-2'>
+                            <div className='flex-1'>
+                                <h5 className="text-[22px]/[30px] font-medium">128</h5>
+                                <small>Article</small>
+                            </div>
+                            <div className='flex-1'>
+                                <h5 className="text-[22px]/[30px] font-medium">1,528</h5>
+                                <small>Followers</small>
+                            </div>
+                            <div className='flex-1'>
+                                <h5 className="text-[22px]/[30px] font-medium">321</h5>
+                                <small>Following</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='card bg-card-color rounded-md overflow-hidden'>
+                    <div className='flex flex-col items-center justify-start pt-6 gap-1 h-[170px] bg-sky'>
+                        <h5 className="mt-3 mb-1 text-[22px]/[30px] font-medium">Michael Dorsey</h5>
+                        <span>UI/UX designer</span>
+                    </div>
+                    <div className='md:p-20 p-15 text-center'>
+                        <div className='relative mt-[-70px] text-center mb-6'>
+                            <img src={avatar3} alt='user' className='w-[80px] h-[80px] min-w-[80px] mx-auto shadow-shadow-sm rounded-full p-[3px] bg-white' />
+                        </div>
+                        <div className='flex items-center justify-center gap-4 mb-6'>
+                            <Link to="#" className='text-sky'><IconBrandFacebook /></Link>
+                            <Link to="#" className='text-sky'><IconBrandX /></Link>
+                            <Link to="#" className='text-sky'><IconBrandInstagram /></Link>
+                        </div>
+                        <p className="text-font-color-100 pb-6 mb-6 border-b border-border-color">795 Folsom Ave, Suite 600 San Francisco, CADGE 94107</p>
+                        <div className='mt-6 flex items-center justify-center gap-2'>
+                            <div className='flex-1'>
+                                <h5 className="text-[22px]/[30px] font-medium">128</h5>
+                                <small>Article</small>
+                            </div>
+                            <div className='flex-1'>
+                                <h5 className="text-[22px]/[30px] font-medium">1,528</h5>
+                                <small>Followers</small>
+                            </div>
+                            <div className='flex-1'>
+                                <h5 className="text-[22px]/[30px] font-medium">321</h5>
+                                <small>Following</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='grid lg:grid-cols-3 grid-cols-1 gap-4 mb-4'>
+                <div className='card bg-card-color rounded-md overflow-hidden'>
+                    <div className='md:p-6 p-4 flex items-center gap-2'>
+                        <img src={avatar1} alt='avatar' />
+                        <div className='mt-1'>
+                            <h6>Eliana Smith</h6>
+                            <p className="mb-1"><small>UI/UX Designer</small></p>
+                            <button className="btn btn-primary">FOLLOW</button>
+                        </div>
+                    </div>
+                    <div className='md:p-6 p-4 bg-border-color'>
+                        <div className='flex items-center justify-between gap-2 mb-4 leading-none text-orange-500'>
+                            <small>Setup your account</small>
+                            <small>60%</small>
+                        </div>
+                        <div className="progress overflow-hidden h-[8px] bg-orange-200 rounded-full">
+                            <div className="progress-bar w-[42%] bg-orange-500 h-full"></div>
+                        </div>
+                    </div>
+                </div>
+                <div className='card bg-card-color rounded-md overflow-hidden'>
+                    <div className='md:p-6 p-4 flex items-center gap-2'>
+                        <img src={avatar2} alt='avatar' />
+                        <div className='mt-1'>
+                            <h6>Eliana Smith</h6>
+                            <p className="mb-1"><small>Web Developer</small></p>
+                            <button className="btn btn-primary">FOLLOW</button>
+                        </div>
+                    </div>
+                    <div className='md:p-6 p-4 bg-border-color'>
+                        <div className='flex items-center justify-between gap-2 mb-4 leading-none text-success'>
+                            <small>Setup your account</small>
+                            <small>60%</small>
+                        </div>
+                        <div className="progress overflow-hidden h-[8px] bg-success-50 rounded-full">
+                            <div className="progress-bar w-[42%] bg-success h-full"></div>
+                        </div>
+                    </div>
+                </div>
+                <div className='card bg-card-color rounded-md overflow-hidden'>
+                    <div className='md:p-6 p-4 flex items-center gap-2'>
+                        <img src={avatar3} alt='avatar' />
+                        <div className='mt-1'>
+                            <h6>Eliana Smith</h6>
+                            <p className="mb-1"><small>Angular</small></p>
+                            <button className="btn btn-primary">FOLLOW</button>
+                        </div>
+                    </div>
+                    <div className='md:p-6 p-4 bg-border-color'>
+                        <div className='flex items-center justify-between gap-2 mb-4 leading-none text-danger'>
+                            <small>Setup your account</small>
+                            <small>60%</small>
+                        </div>
+                        <div className="progress overflow-hidden h-[8px] bg-danger-50 rounded-full">
+                            <div className="progress-bar w-[42%] bg-danger h-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='mb-4'>
+                <div className='flex items-center justify-between gap-2 mb-10'>
+                    <h2 className='flex items-center gap-5 uppercase'>
+                        <strong className='text-primary flex items-center'>
+                            Social
+                        </strong>
+                        Media
+                    </h2>
+                    <div className='flex items-center gap-2'>
+                        <button>
+                            <IconDots />
+                        </button>
+                        <button>
+                            <IconX />
+                        </button>
+                    </div>
+                </div>
+                <div className='react-data-table'>
+                    <ReactDataTable
+                        columns={columnsFilter}
+                        data={dataFilter}
+                    />
+                </div>
+            </div>
+            <div className='grid lg:grid-cols-2 grid-cols-1 gap-4 mb-4'>
+                <div>
+                    <div className='flex items-center justify-between gap-2 mb-10'>
+                        <h2 className='flex items-center gap-5 uppercase'>
+                            <strong className='text-primary flex items-center'>
+                                Basic
+                            </strong>
+                            Slider
+                        </h2>
+                        <div className='flex items-center gap-2'>
+                            <button>
+                                <IconDots />
+                            </button>
+                            <button>
+                                <IconX />
+                            </button>
+                        </div>
+                    </div>
+                    <div className='card bg-card-color md:p-20 p-15 rounded-md'>
+                        <Swiper
+                            modules={[Autoplay]}
+                            slidesPerView={1}
+                            spaceBetween={10}
+                            autoplay={{
+                                delay: 1800,
+                            }}
+                            loop
+                            speed={1000}
+                            className='w-full'
+                        >
+                            <SwiperSlide>
+                                <img src={gallery1} alt='gallery' />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={gallery2} alt='gallery' />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={gallery3} alt='gallery' />
+                            </SwiperSlide>
+                        </Swiper>
+                    </div>
+                </div>
+                <div>
+                    <div className='flex items-center justify-between gap-2 mb-10'>
+                        <h2 className='flex items-center gap-5 uppercase'>
+                            <strong className='text-primary flex items-center'>
+                                Slider
+                            </strong>
+                            With Caption
+                        </h2>
+                        <div className='flex items-center gap-2'>
+                            <button>
+                                <IconDots />
+                            </button>
+                            <button>
+                                <IconX />
+                            </button>
+                        </div>
+                    </div>
+                    <div className='card bg-card-color md:p-20 p-15 rounded-md'>
+                        <Swiper
+                            modules={[Autoplay]}
+                            slidesPerView={1}
+                            spaceBetween={10}
+                            autoplay={{
+                                delay: 1800,
+                            }}
+                            loop
+                            speed={1000}
+                            className='w-full'
+                        >
+                            <SwiperSlide>
+                                <img src={gallery1} alt='gallery' />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={gallery2} alt='gallery' />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={gallery3} alt='gallery' />
+                            </SwiperSlide>
+                        </Swiper>
                     </div>
                 </div>
             </div>
