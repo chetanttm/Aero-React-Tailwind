@@ -48,9 +48,12 @@ import {
     gallery12,
     gallery2,
     gallery3,
+    gallery4,
+    gallery5,
+    gallery6,
 } from '../../assets/images'
 import { toast, ToastContainer } from 'react-toastify'
-import { Autoplay } from 'swiper/modules'
+import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 
 export default function WidgetApp() {
 
@@ -1222,12 +1225,13 @@ export default function WidgetApp() {
                     </div>
                     <div className='card bg-card-color md:p-20 p-15 rounded-md'>
                         <Swiper
-                            modules={[Autoplay]}
+                            modules={[Autoplay, Pagination]}
                             slidesPerView={1}
                             spaceBetween={10}
                             autoplay={{
-                                delay: 1800,
+                                delay: 1500,
                             }}
+                            pagination
                             loop
                             speed={1000}
                             className='w-full'
@@ -1263,24 +1267,44 @@ export default function WidgetApp() {
                     </div>
                     <div className='card bg-card-color md:p-20 p-15 rounded-md'>
                         <Swiper
-                            modules={[Autoplay]}
+                            modules={[Autoplay, Pagination, Navigation]}
                             slidesPerView={1}
                             spaceBetween={10}
                             autoplay={{
-                                delay: 1800,
+                                delay: 2200,
                             }}
+                            pagination
+                            navigation
                             loop
                             speed={1000}
                             className='w-full'
                         >
                             <SwiperSlide>
-                                <img src={gallery1} alt='gallery' />
+                                <div className='relative after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black-50'>
+                                    <img src={gallery4} alt='gallery' />
+                                    <div className='p-2 text-white text-center absolute z-[1] left-[50%] translate-x-[-50%] sm:bottom-[10%] bottom-[15%]'>
+                                        <h3 className='sm:text-[28px]/[38px] text-[22px]/[32px] font-medium sm:mb-4 mb-2'>New York</h3>
+                                        <p>We love the Big Apple!</p>
+                                    </div>
+                                </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={gallery2} alt='gallery' />
+                                <div className='relative after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black-50'>
+                                    <img src={gallery5} alt='gallery' />
+                                    <div className='p-2 text-white text-center absolute z-[1] left-[50%] translate-x-[-50%] sm:bottom-[10%] bottom-[15%]'>
+                                        <h3 className='sm:text-[28px]/[38px] text-[22px]/[32px] font-medium sm:mb-4 mb-2'>New York</h3>
+                                        <p>We love the Big Apple!</p>
+                                    </div>
+                                </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={gallery3} alt='gallery' />
+                                <div className='relative after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black-50'>
+                                    <img src={gallery6} alt='gallery' />
+                                    <div className='p-2 text-white text-center absolute z-[1] left-[50%] translate-x-[-50%] sm:bottom-[10%] bottom-[15%]'>
+                                        <h3 className='sm:text-[28px]/[38px] text-[22px]/[32px] font-medium sm:mb-4 mb-2'>New York</h3>
+                                        <p>We love the Big Apple!</p>
+                                    </div>
+                                </div>
                             </SwiperSlide>
                         </Swiper>
                     </div>

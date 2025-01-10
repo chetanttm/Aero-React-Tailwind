@@ -5,6 +5,8 @@ import './assets/css/font.css'
 import 'react-tabs/style/react-tabs.css';
 import 'react-quill/dist/quill.snow.css';
 import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import Layout from "./components/layout/Layout";
 import Dashboard from "./pages/Dashboard";
 import OurProfile from "./pages/OurProfile";
@@ -54,6 +56,7 @@ import DataTable from "./pages/tables/DataTable";
 import ApexChart from "./pages/charts/ApexChart";
 import Knob from "./pages/charts/Knob";
 import WidgetApp from "./pages/widgets/WidgetApp";
+import WidgetData from "./pages/widgets/WidgetData";
 
 export default function App() {
 
@@ -109,6 +112,7 @@ export default function App() {
           <Route path="/apex-chart" element={<ApexChart />} />
           <Route path="/knob" element={<Knob />} />
           <Route path="/widget-app" element={<WidgetApp />} />
+          <Route path="/widget-data" element={<WidgetData />} />
         </Route>
       </Routes>
     </BrowserRouter>
