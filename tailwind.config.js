@@ -58,6 +58,7 @@ module.exports = {
                 "content-color": "var(--content-color)",
                 "border-color": "var(--border-color)",
                 "warning-100": "var(--warning-100)",
+                "scrollbar-thumb": "var(--scrollbar-thumb)",
 
                 "primary": "var(--primary)",
                 "primary-10": "var(--primary-10)",

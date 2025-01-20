@@ -57,13 +57,19 @@ import ApexChart from "./pages/charts/ApexChart";
 import Knob from "./pages/charts/Knob";
 import WidgetApp from "./pages/widgets/WidgetApp";
 import WidgetData from "./pages/widgets/WidgetData";
+import AuthLayout from "./components/layout/AuthLayout";
+import SignIn from "./pages/auth/SignIn";
+import SignUp from "./pages/auth/SignUp";
+import ForgotPassword from "./pages/auth/ForgotPassword";
+import PageNotFound from "./pages/auth/404";
+import PageNotFound500 from "./pages/auth/500";
 
 export default function App() {
 
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route path="" element={<Layout />} >
+        <Route element={<Layout />}>
           <Route path="/" element={<Dashboard />} />
           <Route path="/our-profile" element={<OurProfile />} />
           <Route path="/app-email" element={<Email />} />
@@ -113,6 +119,13 @@ export default function App() {
           <Route path="/knob" element={<Knob />} />
           <Route path="/widget-app" element={<WidgetApp />} />
           <Route path="/widget-data" element={<WidgetData />} />
+        </Route>
+        <Route element={<AuthLayout />}>
+          <Route path="/sign-in" element={<SignIn />} />
+          <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/500" element={<PageNotFound500 />} />
+          <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
