@@ -17,6 +17,7 @@ import {
     IconHomeFilled,
     IconMenu2,
     IconPuzzleFilled,
+    IconShieldLockFilled,
     IconShoppingCartFilled,
     IconTableFilled,
     IconUserFilled,
@@ -272,6 +273,32 @@ export default function LeftSidebar({ miniSidebarToggle }) {
                 {
                     link: "Data Widgets",
                     url: "/widget-data",
+                },
+            ],
+        },
+        {
+            icon: IconShieldLockFilled,
+            link: "Authentication",
+            children: [
+                {
+                    link: "Sign In",
+                    url: "/sign-in",
+                },
+                {
+                    link: "Sign Up",
+                    url: "/sign-up",
+                },
+                {
+                    link: "Forgot Password",
+                    url: "/forgot-password",
+                },
+                {
+                    link: "404",
+                    url: "/404",
+                },
+                {
+                    link: "500",
+                    url: "/500",
                 },
             ],
         },

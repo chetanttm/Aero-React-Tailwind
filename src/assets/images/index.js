@@ -1,4 +1,5 @@
 import companyLogo from './companyLogo.svg'
+import logoIcon from './logoIcon.svg'
 import userProfile from './profile_av.png'
 import avatar1 from './avatar1.jpg'
 import avatar2 from './avatar2.jpg'
@@ -59,9 +60,13 @@ import blogImage1 from './blog_image_1.jpg'
 import blogImage2 from './blog_image_2.jpg'
 import blogImage3 from './blog_image_3.jpg'
 import blogImage4 from './blog_image_4.jpg'
+import signin from './signin.svg'
+import signup from './signup.svg'
+import error from './404.svg'
 
 export {
     companyLogo,
+    logoIcon,
     userProfile,
     avatar1,
     avatar2,
@@ -122,4 +127,7 @@ export {
     blogImage2,
     blogImage3,
     blogImage4,
+    signin,
+    signup,
+    error,
 };
