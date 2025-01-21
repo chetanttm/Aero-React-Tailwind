@@ -63,6 +63,11 @@ import SignUp from "./pages/auth/SignUp";
 import ForgotPassword from "./pages/auth/ForgotPassword";
 import PageNotFound from "./pages/auth/404";
 import PageNotFound500 from "./pages/auth/500";
+import PageOffline from "./pages/auth/PageOffline";
+import Locked from "./pages/auth/Locked";
+import BlankPage from "./pages/samplePages/BlankPage";
+import ImageGallery from "./pages/samplePages/ImageGallery";
+import Profile from "./pages/samplePages/Profile";
 
 export default function App() {
 
@@ -119,12 +124,17 @@ export default function App() {
           <Route path="/knob" element={<Knob />} />
           <Route path="/widget-app" element={<WidgetApp />} />
           <Route path="/widget-data" element={<WidgetData />} />
+          <Route path="/blank-page" element={<BlankPage />} />
+          <Route path="/image-gallery" element={<ImageGallery />} />
+          <Route path="/profile" element={<Profile />} />
         </Route>
         <Route element={<AuthLayout />}>
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/500" element={<PageNotFound500 />} />
+          <Route path="/page-offline" element={<PageOffline />} />
+          <Route path="/locked" element={<Locked />} />
           <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>

@@ -63,6 +63,7 @@ import blogImage4 from './blog_image_4.jpg'
 import signin from './signin.svg'
 import signup from './signup.svg'
 import error from './404.svg'
+import maintanance from './maintanance.svg'
 
 export {
     companyLogo,
@@ -130,4 +131,5 @@ export {
     signin,
     signup,
     error,
+    maintanance,
 };
