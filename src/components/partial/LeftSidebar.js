@@ -19,6 +19,7 @@ import {
     IconPuzzleFilled,
     IconShieldLockFilled,
     IconShoppingCartFilled,
+    IconSquaresFilled,
     IconTableFilled,
     IconUserFilled,
 } from '@tabler/icons-react';
@@ -299,6 +300,32 @@ export default function LeftSidebar({ miniSidebarToggle }) {
                 {
                     link: "500",
                     url: "/500",
+                },
+                {
+                    link: "Page Offline",
+                    url: "/page-offline",
+                },
+                {
+                    link: "Locked Screen",
+                    url: "/locked",
+                },
+            ],
+        },
+        {
+            icon: IconSquaresFilled,
+            link: "Sample Pages",
+            children: [
+                {
+                    link: "Blank Page",
+                    url: "/blank-page",
+                },
+                {
+                    link: "Image Gallery",
+                    url: "/image-gallery",
+                },
+                {
+                    link: "Profile",
+                    url: "/profile",
                 },
             ],
         },
