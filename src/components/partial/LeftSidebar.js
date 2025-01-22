@@ -327,6 +327,14 @@ export default function LeftSidebar({ miniSidebarToggle }) {
                     link: "Profile",
                     url: "/profile",
                 },
+                {
+                    link: "Timeline",
+                    url: "/timeline",
+                },
+                {
+                    link: "Pricing",
+                    url: "/pricing",
+                },
             ],
         },
     ];

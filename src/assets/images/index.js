@@ -64,6 +64,7 @@ import signin from './signin.svg'
 import signup from './signup.svg'
 import error from './404.svg'
 import maintanance from './maintanance.svg'
+import pricing from './pricing.svg'
 
 export {
     companyLogo,
@@ -132,4 +133,5 @@ export {
     signup,
     error,
     maintanance,
+    pricing,
 };
