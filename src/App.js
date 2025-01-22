@@ -68,6 +68,8 @@ import Locked from "./pages/auth/Locked";
 import BlankPage from "./pages/samplePages/BlankPage";
 import ImageGallery from "./pages/samplePages/ImageGallery";
 import Profile from "./pages/samplePages/Profile";
+import Timeline from "./pages/samplePages/Timeline";
+import Pricing from "./pages/samplePages/Pricing";
 
 export default function App() {
 
@@ -127,6 +129,8 @@ export default function App() {
           <Route path="/blank-page" element={<BlankPage />} />
           <Route path="/image-gallery" element={<ImageGallery />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/timeline" element={<Timeline />} />
+          <Route path="/pricing" element={<Pricing />} />
         </Route>
         <Route element={<AuthLayout />}>
           <Route path="/sign-in" element={<SignIn />} />
