@@ -70,6 +70,7 @@ import ImageGallery from "./pages/samplePages/ImageGallery";
 import Profile from "./pages/samplePages/Profile";
 import Timeline from "./pages/samplePages/Timeline";
 import Pricing from "./pages/samplePages/Pricing";
+import Invoice from "./pages/samplePages/Invoice";
 
 export default function App() {
 
@@ -131,6 +132,7 @@ export default function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/timeline" element={<Timeline />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/invoice" element={<Invoice />} />
         </Route>
         <Route element={<AuthLayout />}>
           <Route path="/sign-in" element={<SignIn />} />

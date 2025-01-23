@@ -335,6 +335,10 @@ export default function LeftSidebar({ miniSidebarToggle }) {
                     link: "Pricing",
                     url: "/pricing",
                 },
+                {
+                    link: "Invoice",
+                    url: "/invoice",
+                },
             ],
         },
     ];
