@@ -71,6 +71,10 @@ import Profile from "./pages/samplePages/Profile";
 import Timeline from "./pages/samplePages/Timeline";
 import Pricing from "./pages/samplePages/Pricing";
 import Invoice from "./pages/samplePages/Invoice";
+import InvoiceList from "./pages/samplePages/InvoiceList";
+import SearchResult from "./pages/samplePages/SearchResult";
+import JvectorMap from "./pages/maps/JvectorMap";
+import YandexMap from "./pages/maps/YandexMap";
 
 export default function App() {
 
@@ -133,6 +137,10 @@ export default function App() {
           <Route path="/timeline" element={<Timeline />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/invoice" element={<Invoice />} />
+          <Route path="/invoice-list" element={<InvoiceList />} />
+          <Route path="/search-result" element={<SearchResult />} />
+          <Route path="/jvector-map" element={<JvectorMap />} />
+          <Route path="/yandex-map" element={<YandexMap />} />
         </Route>
         <Route element={<AuthLayout />}>
           <Route path="/sign-in" element={<SignIn />} />
