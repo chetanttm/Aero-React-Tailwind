@@ -15,6 +15,7 @@ import {
     IconFileFilled,
     IconFolderFilled,
     IconHomeFilled,
+    IconMapPinFilled,
     IconMenu2,
     IconPuzzleFilled,
     IconShieldLockFilled,
@@ -338,6 +339,28 @@ export default function LeftSidebar({ miniSidebarToggle }) {
                 {
                     link: "Invoice",
                     url: "/invoice",
+                },
+                {
+                    link: "Invoice List",
+                    url: "/invoice-list",
+                },
+                {
+                    link: "Search Result",
+                    url: "/search-result",
+                },
+            ],
+        },
+        {
+            icon: IconMapPinFilled,
+            link: "Maps",
+            children: [
+                {
+                    link: "JVector Map",
+                    url: "/jvector-map",
+                },
+                {
+                    link: "Yandex Map",
+                    url: "/yandex-map",
                 },
             ],
         },
