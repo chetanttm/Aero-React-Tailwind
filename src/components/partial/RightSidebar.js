@@ -195,24 +195,36 @@ export default function RightSidebar() {
 
     const googleFonts = [
         {
+            id: 'interFont',
+            label: 'Inter'
+        },
+        {
+            id: 'jostFont',
+            label: 'Jost'
+        },
+        {
+            id: 'maliFont',
+            label: 'Mali'
+        },
+        {
+            id: 'montserratFont',
+            label: 'Montserrat'
+        },
+        {
             id: 'openSansFont',
             label: 'Open Sans'
         },
         {
-            id: 'quickSandFont',
-            label: 'Quicksand'
+            id: 'poppinsFont',
+            label: 'Poppins'
         },
         {
-            id: 'nunitoFont',
-            label: 'Nunito'
-        },
-        {
-            id: 'ralewayFont',
-            label: 'Raleway'
+            id: 'robotoFont',
+            label: 'Roboto'
         },
     ];
 
-    const [selectedFont, setSelectedFont] = useState(googleFonts[0].label);
+    const [selectedFont, setSelectedFont] = useState(googleFonts[3].label);
     useEffect(() => {
         document.documentElement.style.setProperty('--font-family', selectedFont);
     }, [selectedFont]);
@@ -526,13 +538,13 @@ export default function RightSidebar() {
                     <div className='p-4 h-[calc(100svh-62px-40px)] overflow-auto no-scrollbar'>
                         <TabPanel>
                             <div className='mb-6'>
-                                <h6 className='text-[14px]/[1.5] font-bold uppercase mb-2'>Color Skins</h6>
+                                <h2 className='text-[14px]/[1.5] font-bold uppercase mb-2'>Color Skins</h2>
                                 <ul className='flex gap-1'>
                                     {colorItem.map((item, key) => (
                                         <li
                                             key={key}
                                             onClick={() => handleThemeChange(item.name)}
-                                            className={`w-[33px] h-[25px] rounded flex items-center justify-center relative cursor-pointer ${item.color}`}
+                                            className={`w-[33px] h-[25px] rounded-full flex items-center justify-center relative cursor-pointer ${item.color}`}
                                         >
                                             {selectedTheme === item.name && <IconCheck className='w-[18px] h-[18px] min-w-[18px] text-white' />}
                                         </li>
@@ -540,7 +552,7 @@ export default function RightSidebar() {
                                 </ul>
                             </div>
                             <div className='mb-6'>
-                                <h6 className='text-[14px]/[1.5] font-bold uppercase mb-2'>Theme Option</h6>
+                                <h2 className='text-[14px]/[1.5] font-bold uppercase mb-2'>Theme Option</h2>
                                 <ul>
                                     <li className='p-2 border border-border-color border-t-0 first:border-t'>
                                         <div className="form-check form-switch">
@@ -569,7 +581,7 @@ export default function RightSidebar() {
                                 </ul>
                             </div>
                             <div>
-                                <h6 className='text-[14px]/[1.5] font-bold uppercase mb-2'>Google font Settings</h6>
+                                <h2 className='text-[14px]/[1.5] font-bold uppercase mb-2'>Google font Settings</h2>
                                 <ul>
                                     {googleFonts.map((item, key) => (
                                         <li

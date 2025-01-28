@@ -1,3 +1,308 @@
+/* inter */
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter/Inter-Thin.woff2') format('woff2'),
+        url('../fonts/inter/Inter-Thin.woff') format('woff'),
+        url('../fonts/inter/Inter-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter/Inter-ExtraLight.woff2') format('woff2'),
+        url('../fonts/inter/Inter-ExtraLight.woff') format('woff'),
+        url('../fonts/inter/Inter-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter/Inter-Light.woff2') format('woff2'),
+        url('../fonts/inter/Inter-Light.woff') format('woff'),
+        url('../fonts/inter/Inter-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter/Inter-Regular.woff2') format('woff2'),
+        url('../fonts/inter/Inter-Regular.woff') format('woff'),
+        url('../fonts/inter/Inter-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter/Inter-Medium.woff2') format('woff2'),
+        url('../fonts/inter/Inter-Medium.woff') format('woff'),
+        url('../fonts/inter/Inter-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter/Inter-SemiBold.woff2') format('woff2'),
+        url('../fonts/inter/Inter-SemiBold.woff') format('woff'),
+        url('../fonts/inter/Inter-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter/Inter-Bold.woff2') format('woff2'),
+        url('../fonts/inter/Inter-Bold.woff') format('woff'),
+        url('../fonts/inter/Inter-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter/Inter-ExtraBold.woff2') format('woff2'),
+        url('../fonts/inter/Inter-ExtraBold.woff') format('woff'),
+        url('../fonts/inter/Inter-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter/Inter-Black.woff2') format('woff2'),
+        url('../fonts/inter/Inter-Black.woff') format('woff'),
+        url('../fonts/inter/Inter-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* jost */
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/jost/Jost-Thin.woff2') format('woff2'),
+        url('../fonts/jost/Jost-Thin.woff') format('woff'),
+        url('../fonts/jost/Jost-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/jost/Jost-ExtraLight.woff2') format('woff2'),
+        url('../fonts/jost/Jost-ExtraLight.woff') format('woff'),
+        url('../fonts/jost/Jost-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/jost/Jost-Light.woff2') format('woff2'),
+        url('../fonts/jost/Jost-Light.woff') format('woff'),
+        url('../fonts/jost/Jost-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/jost/Jost-Regular.woff2') format('woff2'),
+        url('../fonts/jost/Jost-Regular.woff') format('woff'),
+        url('../fonts/jost/Jost-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/jost/Jost-Medium.woff2') format('woff2'),
+        url('../fonts/jost/Jost-Medium.woff') format('woff'),
+        url('../fonts/jost/Jost-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/jost/Jost-SemiBold.woff2') format('woff2'),
+        url('../fonts/jost/Jost-SemiBold.woff') format('woff'),
+        url('../fonts/jost/Jost-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/jost/Jost-Bold.woff2') format('woff2'),
+        url('../fonts/jost/Jost-Bold.woff') format('woff'),
+        url('../fonts/jost/Jost-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/jost/Jost-ExtraBold.woff2') format('woff2'),
+        url('../fonts/jost/Jost-ExtraBold.woff') format('woff'),
+        url('../fonts/jost/Jost-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/jost/Jost-Black.woff2') format('woff2'),
+        url('../fonts/jost/Jost-Black.woff') format('woff'),
+        url('../fonts/jost/Jost-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* mali */
+@font-face {
+    font-family: 'Mali';
+    src: url('../fonts/mali/Mali-ExtraLight.woff2') format('woff2'),
+        url('../fonts/mali/Mali-ExtraLight.woff') format('woff'),
+        url('../fonts/mali/Mali-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Mali';
+    src: url('../fonts/mali/Mali-Light.woff2') format('woff2'),
+        url('../fonts/mali/Mali-Light.woff') format('woff'),
+        url('../fonts/mali/Mali-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Mali';
+    src: url('../fonts/mali/Mali-Regular.woff2') format('woff2'),
+        url('../fonts/mali/Mali-Regular.woff') format('woff'),
+        url('../fonts/mali/Mali-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Mali';
+    src: url('../fonts/mali/Mali-Medium.woff2') format('woff2'),
+        url('../fonts/mali/Mali-Medium.woff') format('woff'),
+        url('../fonts/mali/Mali-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Mali';
+    src: url('../fonts/mali/Mali-SemiBold.woff2') format('woff2'),
+        url('../fonts/mali/Mali-SemiBold.woff') format('woff'),
+        url('../fonts/mali/Mali-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Mali';
+    src: url('../fonts/mali/Mali-Bold.woff2') format('woff2'),
+        url('../fonts/mali/Mali-Bold.woff') format('woff'),
+        url('../fonts/mali/Mali-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* montserrat */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Thin.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-Thin.woff') format('woff'),
+        url('../fonts/montserrat/Montserrat-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-ExtraLight.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-ExtraLight.woff') format('woff'),
+        url('../fonts/montserrat/Montserrat-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Light.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-Light.woff') format('woff'),
+        url('../fonts/montserrat/Montserrat-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-Regular.woff') format('woff'),
+        url('../fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-Medium.woff') format('woff'),
+        url('../fonts/montserrat/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-SemiBold.woff') format('woff'),
+        url('../fonts/montserrat/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-Bold.woff') format('woff'),
+        url('../fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-ExtraBold.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-ExtraBold.woff') format('woff'),
+        url('../fonts/montserrat/Montserrat-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Black.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-Black.woff') format('woff'),
+        url('../fonts/montserrat/Montserrat-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Open Sans */
 @font-face {
     font-family: 'Open Sans';
@@ -54,205 +359,140 @@
     font-display: swap;
 }
 
-/* quicksand */
+/* poppins */
 @font-face {
-    font-family: 'Quicksand';
-    src: url('../fonts/quicksand/Quicksand-Light.woff2') format('woff2'),
-        url('../fonts/quicksand/Quicksand-Light.woff') format('woff'),
-        url('../fonts/quicksand/Quicksand-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Quicksand';
-    src: url('../fonts/quicksand/Quicksand-Regular.woff2') format('woff2'),
-        url('../fonts/quicksand/Quicksand-Regular.woff') format('woff'),
-        url('../fonts/quicksand/Quicksand-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Quicksand';
-    src: url('../fonts/quicksand/Quicksand-Medium.woff2') format('woff2'),
-        url('../fonts/quicksand/Quicksand-Medium.woff') format('woff'),
-        url('../fonts/quicksand/Quicksand-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Quicksand';
-    src: url('../fonts/quicksand/Quicksand-SemiBold.woff2') format('woff2'),
-        url('../fonts/quicksand/Quicksand-SemiBold.woff') format('woff'),
-        url('../fonts/quicksand/Quicksand-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Quicksand';
-    src: url('../fonts/quicksand/Quicksand-Bold.woff2') format('woff2'),
-        url('../fonts/quicksand/Quicksand-Bold.woff') format('woff'),
-        url('../fonts/quicksand/Quicksand-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-/* Nunito */
-@font-face {
-    font-family: 'Nunito';
-    src: url('../fonts/nunito/Nunito-ExtraLight.woff2') format('woff2'),
-        url('../fonts/nunito/Nunito-ExtraLight.woff') format('woff'),
-        url('../fonts/nunito/Nunito-ExtraLight.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Nunito';
-    src: url('../fonts/nunito/Nunito-Light.woff2') format('woff2'),
-        url('../fonts/nunito/Nunito-Light.woff') format('woff'),
-        url('../fonts/nunito/Nunito-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Nunito';
-    src: url('../fonts/nunito/Nunito-Regular.woff2') format('woff2'),
-        url('../fonts/nunito/Nunito-Regular.woff') format('woff'),
-        url('../fonts/nunito/Nunito-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Nunito';
-    src: url('../fonts/nunito/Nunito-Medium.woff2') format('woff2'),
-        url('../fonts/nunito/Nunito-Medium.woff') format('woff'),
-        url('../fonts/nunito/Nunito-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Nunito';
-    src: url('../fonts/nunito/Nunito-SemiBold.woff2') format('woff2'),
-        url('../fonts/nunito/Nunito-SemiBold.woff') format('woff'),
-        url('../fonts/nunito/Nunito-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Nunito';
-    src: url('../fonts/nunito/Nunito-Bold.woff2') format('woff2'),
-        url('../fonts/nunito/Nunito-Bold.woff') format('woff'),
-        url('../fonts/nunito/Nunito-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Nunito';
-    src: url('../fonts/nunito/Nunito-ExtraBold.woff2') format('woff2'),
-        url('../fonts/nunito/Nunito-ExtraBold.woff') format('woff'),
-        url('../fonts/nunito/Nunito-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Nunito';
-    src: url('../fonts/nunito/Nunito-Black.woff2') format('woff2'),
-        url('../fonts/nunito/Nunito-Black.woff') format('woff'),
-        url('../fonts/nunito/Nunito-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-/* Raleway */
-@font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/raleway/Raleway-Thin.woff2') format('woff2'),
-        url('../fonts/raleway/Raleway-Thin.woff') format('woff'),
-        url('../fonts/raleway/Raleway-Thin.ttf') format('truetype');
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-Thin.woff2') format('woff2'),
+        url('../fonts/poppins/Poppins-Thin.woff') format('woff'),
+        url('../fonts/poppins/Poppins-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/raleway/Raleway-ExtraLight.woff2') format('woff2'),
-        url('../fonts/raleway/Raleway-ExtraLight.woff') format('woff'),
-        url('../fonts/raleway/Raleway-ExtraLight.ttf') format('truetype');
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-ExtraLight.woff2') format('woff2'),
+        url('../fonts/poppins/Poppins-ExtraLight.woff') format('woff'),
+        url('../fonts/poppins/Poppins-ExtraLight.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/raleway/Raleway-Light.woff2') format('woff2'),
-        url('../fonts/raleway/Raleway-Light.woff') format('woff'),
-        url('../fonts/raleway/Raleway-Light.ttf') format('truetype');
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-Light.woff2') format('woff2'),
+        url('../fonts/poppins/Poppins-Light.woff') format('woff'),
+        url('../fonts/poppins/Poppins-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/raleway/Raleway-Regular.woff2') format('woff2'),
-        url('../fonts/raleway/Raleway-Regular.woff') format('woff'),
-        url('../fonts/raleway/Raleway-Regular.ttf') format('truetype');
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/poppins/Poppins-Regular.woff') format('woff'),
+        url('../fonts/poppins/Poppins-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/raleway/Raleway-Medium.woff2') format('woff2'),
-        url('../fonts/raleway/Raleway-Medium.woff') format('woff'),
-        url('../fonts/raleway/Raleway-Medium.ttf') format('truetype');
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-Medium.woff2') format('woff2'),
+        url('../fonts/poppins/Poppins-Medium.woff') format('woff'),
+        url('../fonts/poppins/Poppins-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/raleway/Raleway-SemiBold.woff2') format('woff2'),
-        url('../fonts/raleway/Raleway-SemiBold.woff') format('woff'),
-        url('../fonts/raleway/Raleway-SemiBold.ttf') format('truetype');
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-SemiBold.woff2') format('woff2'),
+        url('../fonts/poppins/Poppins-SemiBold.woff') format('woff'),
+        url('../fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/raleway/Raleway-Bold.woff2') format('woff2'),
-        url('../fonts/raleway/Raleway-Bold.woff') format('woff'),
-        url('../fonts/raleway/Raleway-Bold.ttf') format('truetype');
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-Bold.woff2') format('woff2'),
+        url('../fonts/poppins/Poppins-Bold.woff') format('woff'),
+        url('../fonts/poppins/Poppins-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/raleway/Raleway-ExtraBold.woff2') format('woff2'),
-        url('../fonts/raleway/Raleway-ExtraBold.woff') format('woff'),
-        url('../fonts/raleway/Raleway-ExtraBold.ttf') format('truetype');
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-ExtraBold.woff2') format('woff2'),
+        url('../fonts/poppins/Poppins-ExtraBold.woff') format('woff'),
+        url('../fonts/poppins/Poppins-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/raleway/Raleway-Black.woff2') format('woff2'),
-        url('../fonts/raleway/Raleway-Black.woff') format('woff'),
-        url('../fonts/raleway/Raleway-Black.ttf') format('truetype');
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-Black.woff2') format('woff2'),
+        url('../fonts/poppins/Poppins-Black.woff') format('woff'),
+        url('../fonts/poppins/Poppins-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* roboto */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Thin.woff2') format('woff2'),
+        url('../fonts/roboto/Roboto-Thin.woff') format('woff'),
+        url('../fonts/roboto/Roboto-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Light.woff2') format('woff2'),
+        url('../fonts/roboto/Roboto-Light.woff') format('woff'),
+        url('../fonts/roboto/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/roboto/Roboto-Regular.woff') format('woff'),
+        url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Medium.woff2') format('woff2'),
+        url('../fonts/roboto/Roboto-Medium.woff') format('woff'),
+        url('../fonts/roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/roboto/Roboto-Bold.woff') format('woff'),
+        url('../fonts/roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Black.woff2') format('woff2'),
+        url('../fonts/roboto/Roboto-Black.woff') format('woff'),
+        url('../fonts/roboto/Roboto-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
