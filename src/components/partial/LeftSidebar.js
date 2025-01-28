@@ -457,7 +457,7 @@ export default function LeftSidebar({ miniSidebarToggle }) {
                         <div className="progress-bar w-[67%] bg-primary h-full"></div>
                     </div>
                 </div>
-                <div className='sidebar-bottom-info'>
+                <div className='sidebar-bottom-info mb-4'>
                     <div className='text-[12px]/[18px] text-secondary uppercase flex items-center gap-2 justify-between mb-10'>
                         <span>Server Load</span>
                         <span>86%</span>
