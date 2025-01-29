@@ -44,8 +44,8 @@ import {
     avatar6,
     gallery1,
     gallery10,
-    gallery11,
     gallery12,
+    gallery13,
     gallery2,
     gallery3,
     gallery4,
@@ -650,7 +650,7 @@ export default function WidgetApp() {
             </div>
             <div className='grid lg:grid-cols-3 grid-cols-1 gap-4 mb-4'>
                 <div className='card bg-card-color md:p-20 p-15 rounded-md'>
-                    <img src={gallery11} alt='gallery' />
+                    <img src={gallery13} alt='gallery' />
                     <div className='mt-4'>
                         <h6 className='font-bold'>Magazine Design</h6>
                         <small className="text-font-color-100">Aero  |  Last Update: 12 Dec 2019</small>
@@ -1035,7 +1035,7 @@ export default function WidgetApp() {
             <div className='grid lg:grid-cols-3 grid-cols-1 gap-4 mb-4'>
                 <div className='card bg-card-color rounded-md overflow-hidden'>
                     <div className='flex max-h-[170px] relative before:w-full before:h-full before:absolute before:top-0 before:left-0 before:opacity-80 before:bg-gradient-to-r before:from-[#6f42c1] before:to-[#ffc107]'>
-                        <img src={gallery2} alt='user cover' className='object-cover' />
+                        <img src={gallery5} alt='user cover' className='object-cover' />
                     </div>
                     <div className='md:p-20 p-15 text-center'>
                         <div className='relative mt-[-70px] text-center mb-2'>
@@ -1062,7 +1062,7 @@ export default function WidgetApp() {
                 </div>
                 <div className='card bg-card-color rounded-md overflow-hidden'>
                     <div className='flex max-h-[170px] relative before:w-full before:h-full before:absolute before:top-0 before:left-0 before:opacity-80 before:bg-gradient-to-r before:from-[#1cbfd0] before:to-[#6610f2]'>
-                        <img src={gallery3} alt='user cover' className='object-cover' />
+                        <img src={gallery4} alt='user cover' className='object-cover' />
                     </div>
                     <div className='md:p-20 p-15'>
                         <div className='relative mt-[-70px] mb-3 flex items-end gap-2'>

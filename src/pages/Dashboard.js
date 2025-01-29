@@ -34,7 +34,7 @@ export default function Dashboard() {
 
     const breadcrumbItem = [
         {
-            name: "Dashboard 1",
+            name: "Dashboard",
         },
     ];
 

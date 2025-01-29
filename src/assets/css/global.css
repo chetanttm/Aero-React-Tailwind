@@ -9,13 +9,13 @@
     --shadow-normal: 0 0 16px rgba(33, 37, 41, 0.06), 0 6px 20px rgba(33, 37, 41, 0.02);
     --shadow-lg: 0 0.5rem 1rem rgba(25, 26, 28, 0.15);
 
-    --theme-indigo: #4C3575;
-    --theme-blue: #1363DF;
-    --theme-cyan: #219F94;
-    --theme-green: #8CBA51;
-    --theme-orange: #FF9234;
-    --theme-blush: #dd5e89;
-    --theme-red: #f73859;
+    --theme-indigo: #493D9E;
+    --theme-blue: #1230AE;
+    --theme-cyan: #36BA98;
+    --theme-green: #1F4529;
+    --theme-orange: #EB5A3C;
+    --theme-blush: #D2649A;
+    --theme-red: #B82132;
 
     --white: #fff;
     --white-10: #ffffff1a;
@@ -78,87 +78,87 @@
 }
 
 [data-aero-theme="indigo"] {
-    --primary: #4C3575;
-    --primary-10: #4c35751a;
-    --primary-80: #4c3575cc;
-    --secondary: #e05170;
-    --chart-color1: #b9b3a8;
-    --chart-color2: #4C3575;
-    --chart-color3: #98427e;
-    --chart-color4: #d55a75;
-    --chart-color5: #fb8665;
+    --primary: #493D9E;
+    --primary-10: #493D9E1a;
+    --primary-80: #493D9Ecc;
+    --secondary: #B2A5FF;
+    --chart-color1: #EFB036;
+    --chart-color2: #3B6790;
+    --chart-color3: #23486A;
+    --chart-color4: #4C7B8B;
+    --chart-color5: #493D9E;
 }
 
 [data-aero-theme="blue"] {
-    --primary: #1363DF;
-    --primary-10: #4c35751a;
-    --primary-80: #4c3575cc;
-    --secondary: #4FD3C4;
-    --chart-color1: #1363df;
-    --chart-color2: #ff8974;
-    --chart-color3: #ffc25b;
-    --chart-color4: #70afeb;
-    --chart-color5: #4FD3C4;
+    --primary: #1230AE;
+    --primary-10: #1230AE1a;
+    --primary-80: #1230AEcc;
+    --secondary: #6C48C5;
+    --chart-color1: #16325B;
+    --chart-color2: #227B94;
+    --chart-color3: #78B7D0;
+    --chart-color4: #FFDC7F;
+    --chart-color5: #1230AE;
 }
 
 [data-aero-theme="cyan"] {
-    --primary: #219F94;
-    --primary-10: #219F941a;
-    --primary-80: #219F94cc;
-    --secondary: #655D8A;
-    --chart-color1: #219F94;
-    --chart-color2: #655D8A;
-    --chart-color3: #C1DEAE;
-    --chart-color4: #FDCEB9;
-    --chart-color5: #D885A3;
+    --primary: #36BA98;
+    --primary-10: #36BA981a;
+    --primary-80: #36BA98cc;
+    --secondary: #E9C46A;
+    --chart-color1: #F4A261;
+    --chart-color2: #36BA98;
+    --chart-color3: #E76F51;
+    --chart-color4: #BDE8CA;
+    --chart-color5: #D7C3F1;
 }
 
 [data-aero-theme="green"] {
-    --primary: #8CBA51;
-    --primary-10: #8CBA511a;
-    --primary-80: #8CBA51cc;
-    --secondary: #A1DD70;
-    --chart-color1: #79B989;
-    --chart-color2: #7E8954;
-    --chart-color3: #91A7FB;
-    --chart-color4: #3FBCB8;
-    --chart-color5: #ecbc7c;
+    --primary: #1F4529;
+    --primary-10: #1F45291a;
+    --primary-80: #1F4529cc;
+    --secondary: #FFD65A;
+    --chart-color1: #1F4529;
+    --chart-color2: #16C47F;
+    --chart-color3: #3D0301;
+    --chart-color4: #B03052;
+    --chart-color5: #D76C82;
 }
 
 [data-aero-theme="orange"] {
-    --primary: #FF9234;
-    --primary-10: #FF92341a;
-    --primary-80: #FF9234cc;
-    --secondary: #D8C962;
-    --chart-color1: #FFA600;
-    --chart-color2: #FF8982;
-    --chart-color3: #FFC0B7;
-    --chart-color4: #CF7F00;
-    --chart-color5: #00B4B7;
+    --primary: #EB5A3C;
+    --primary-10: #EB5A3C1a;
+    --primary-80: #EB5A3Ccc;
+    --secondary: #DF9755;
+    --chart-color1: #09122C;
+    --chart-color2: #872341;
+    --chart-color3: #BE3144;
+    --chart-color4: #E17564;
+    --chart-color5: #EB5A3C;
 }
 
 [data-aero-theme="blush"] {
-    --primary: #dd5e89;
-    --primary-10: #dd5e891a;
-    --primary-80: #dd5e89cc;
-    --secondary: #f7bb97;
-    --chart-color1: #dd5e89;
-    --chart-color2: #b45d98;
-    --chart-color3: #865e99;
-    --chart-color4: #5b5b8b;
-    --chart-color5: #f7bb97;
+    --primary: #D2649A;
+    --primary-10: #D2649A1a;
+    --primary-80: #D2649Acc;
+    --secondary: #AD88C6;
+    --chart-color1: #D2649A;
+    --chart-color2: #10439F;
+    --chart-color3: #874CCC;
+    --chart-color4: #C65BCF;
+    --chart-color5: #F27BBD;
 }
 
 [data-aero-theme="red"] {
-    --primary: #f73859;
-    --primary-10: #f738591a;
-    --primary-80: #f73859cc;
-    --secondary: #7e52b9;
-    --chart-color1: #FF7171;
-    --chart-color2: #FFAA71;
-    --chart-color3: #6E6D6D;
-    --chart-color4: #D9C6A5;
-    --chart-color5: #99B898;
+    --primary: #B82132;
+    --primary-10: #B821321a;
+    --primary-80: #B82132cc;
+    --secondary: #D2665A;
+    --chart-color1: #7ED4AD;
+    --chart-color2: #D76C82;
+    --chart-color3: #B03052;
+    --chart-color4: #3D0301;
+    --chart-color5: #B82132;
 }
 
 @layer utilities {

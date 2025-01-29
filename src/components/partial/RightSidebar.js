@@ -167,7 +167,7 @@ export default function RightSidebar() {
         setSettingModal(!settingModal);
     }
 
-    const [selectedTheme, setSelectedTheme] = useState("red");
+    const [selectedTheme, setSelectedTheme] = useState("orange");
     const handleThemeChange = (theme) => {
         setSelectedTheme(theme);
         document.body.setAttribute("data-aero-theme", theme);
@@ -507,9 +507,9 @@ export default function RightSidebar() {
                     </button>
                 </li>
                 <li className='relative'>
-                    <button title='Sign Out' className='relative xl:w-[50px] w-[30px] h-[50px] xl:min-w-[50px] min-w-[30px] flex items-center justify-center rounded transition-all duration-300 hover:bg-primary hover:text-white'>
+                    <Link to="/locked" title='Sign Out' className='relative xl:w-[50px] w-[30px] h-[50px] xl:min-w-[50px] min-w-[30px] flex items-center justify-center rounded transition-all duration-300 hover:bg-primary hover:text-white'>
                         <IconPower className='w-[20px] h-[20px] min-w-[20px]' />
-                    </button>
+                    </Link>
                 </li>
             </ul>
             <div className={`search-page transition-all duration-500 fixed top-0 left-0 w-full h-full z-4 ${searchModal ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 -translate-y-full scale-0'}`}>
