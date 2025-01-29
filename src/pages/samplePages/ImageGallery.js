@@ -84,9 +84,9 @@ export default function ImageGallery() {
             <Breadcrumb breadcrumbItem={breadcrumbItem} title="Image Gallery" />
             <div className='card bg-card-color md:p-20 p-15 rounded-md'>
                 <p className='mb-4'>All pictures taken from <Link to="https://www.pexels.com/" target='_blank' className='text-sky'>pexels.com</Link></p>
-                <SlideshowLightbox showThumbnails onOpen={() => { document.body.classList.add("overflow-hidden") }} onClose={() => { document.body.classList.remove("overflow-hidden") }} className="grid lg:grid-cols-4 md:grid-cols-2 gap-4 w-full">
+                <SlideshowLightbox showThumbnails onOpen={() => { document.body.classList.add("overflow-hidden") }} onClose={() => { document.body.classList.remove("overflow-hidden") }} className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 w-full">
                     {galleryPhotos.map((item, key) => (
-                        <img key={key} src={item.image} alt='gallery' className="w-full rounded p-1 bg-border-color" />
+                        <img key={key} src={item.image} alt='gallery' className="w-full rounded p-1 bg-border-color md:h-[240px] md:object-cover" />
                     ))}
                 </SlideshowLightbox>
             </div>
