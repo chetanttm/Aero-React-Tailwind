@@ -180,7 +180,7 @@ export default function Chat() {
                         </li>
                     </ul>
                 </div>
-                <div className='p-4 flex-1 bg-card-color lg:ms-20'>
+                <div className='card p-4 flex-1 bg-card-color lg:ms-20'>
                     <div className='pb-4 mb-4 border-b border-border-color flex items-center gap-2 justify-between'>
                         <Link to="#" className='flex gap-4 group flex-1'>
                             <img src={avatar3} alt='avatar' width="36" height="36" className='w-[36px] h-[36px] min-w-[36px] rounded-full' />

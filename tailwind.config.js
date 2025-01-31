@@ -91,6 +91,17 @@ module.exports = {
                 'xl': '1200px',
                 'xxl': '1440px',
             },
+            container: {
+                center: true,
+                screens: {
+                    'ssm': '375px',
+                    'sm': '640px',
+                    'md': '768px',
+                    'lg': '1024px',
+                    'xl': '1200px',
+                    'xxl': '1320px',
+                }
+            }
         },
     },
     plugins: [],
