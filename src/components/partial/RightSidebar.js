@@ -73,7 +73,7 @@ const colorItem = [
     },
 ]
 
-export default function RightSidebar() {
+export default function RightSidebar({ containerToggle, container }) {
 
     const [rightSidebar, setRightSidebar] = useState(false);
     const rightSidebarToggle = () => {
@@ -193,7 +193,14 @@ export default function RightSidebar() {
         }
     }
 
-    const googleFonts = [
+    // sidebar dark
+    const [sidebarDark, setSidebarDark] = useState(false);
+    const sidebarDarkToggle = () => {
+        setSidebarDark(!sidebarDark);
+        document.body.classList.toggle("sidebar-dark")
+    }
+
+    const bodyFonts = [
         {
             id: 'interFont',
             label: 'Inter'
@@ -224,13 +231,27 @@ export default function RightSidebar() {
         },
     ];
 
-    const [selectedFont, setSelectedFont] = useState(googleFonts[3].label);
+    const [selectedFont, setSelectedFont] = useState(bodyFonts[3].label);
     useEffect(() => {
         document.documentElement.style.setProperty('--font-family', selectedFont);
     }, [selectedFont]);
     const handleFontChange = (item) => {
         setSelectedFont(item.label);
     };
+
+    // border radius setting
+    const [showRadius, setShowRadius] = useState(true);
+    const radiusToggle = () => {
+        setShowRadius(!showRadius);
+        document.body.classList.toggle("radius-0")
+    }
+
+    // box shadow setting
+    const [showShadow, setShowShadow] = useState(false);
+    const shadowToggle = () => {
+        setShowShadow(!showShadow);
+        document.body.classList.toggle("card-shadow")
+    }
 
     return (
         <>
@@ -278,7 +299,7 @@ export default function RightSidebar() {
                             </li>
                             <li>
                                 <Link to="#" className='md:p-15 p-10 flex flex-col items-center justify-center rounded-md transition-all hover:bg-content-color'>
-                                    <span className='flex items-center justify-center w-[36px] h-[36px] min-w-[36px] rounded bg-purple-700 text-white mb-2'>
+                                    <span className='flex items-center justify-center w-[36px] h-[36px] min-w-[36px] rounded bg-purple text-white mb-2'>
                                         <IconAddressBook />
                                     </span>
                                     <span>Contacts</span>
@@ -330,7 +351,7 @@ export default function RightSidebar() {
                             </li>
                             <li>
                                 <Link to="#" className='md:p-15 p-10 flex gap-10 transition-all hover:bg-content-color'>
-                                    <span className='flex items-center justify-center w-[36px] h-[36px] min-w-[36px] rounded bg-yellow-500 text-white'>
+                                    <span className='flex items-center justify-center w-[36px] h-[36px] min-w-[36px] rounded bg-yellow text-white'>
                                         <IconShoppingCart />
                                     </span>
                                     <div>
@@ -386,7 +407,7 @@ export default function RightSidebar() {
                             </li>
                             <li>
                                 <Link to="#" className='md:p-15 p-10 flex gap-10 transition-all hover:bg-content-color'>
-                                    <span className='flex items-center justify-center w-[36px] h-[36px] min-w-[36px] rounded bg-purple-500 text-white'>
+                                    <span className='flex items-center justify-center w-[36px] h-[36px] min-w-[36px] rounded bg-purple text-white'>
                                         <IconRecycle />
                                     </span>
                                     <div>
@@ -578,12 +599,24 @@ export default function RightSidebar() {
                                             <label className="form-check-label" htmlFor="rtl_checkbox">Enable RTL Mode!</label>
                                         </div>
                                     </li>
+                                    <li className='p-2 border border-border-color border-t-0 first:border-t'>
+                                        <div className="form-check form-switch">
+                                            <input
+                                                type="checkbox"
+                                                id="sidebar_dark_checkbox"
+                                                className="form-check-input"
+                                                onChange={sidebarDarkToggle}
+                                                checked={sidebarDark}
+                                            />
+                                            <label className="form-check-label" htmlFor="sidebar_dark_checkbox">Enable Sidebar Dark!</label>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
-                            <div>
-                                <h2 className='text-[14px]/[1.5] font-bold uppercase mb-2'>Google font Settings</h2>
+                            <div className='mb-6'>
+                                <h2 className='text-[14px]/[1.5] font-bold uppercase mb-2'>Body font Settings</h2>
                                 <ul>
-                                    {googleFonts.map((item, key) => (
+                                    {bodyFonts.map((item, key) => (
                                         <li
                                             key={key}
                                             className='p-2 border border-border-color border-t-0 first:border-t'>
@@ -591,7 +624,7 @@ export default function RightSidebar() {
                                                 <input
                                                     type="radio"
                                                     id={item.id}
-                                                    name="googleFontRadio"
+                                                    name="bodyFontRadio"
                                                     className="form-radio-input small"
                                                     checked={selectedFont === item.label}
                                                     onChange={() => handleFontChange(item)}
@@ -602,6 +635,52 @@ export default function RightSidebar() {
                                             </div>
                                         </li>
                                     ))}
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 className='text-[14px]/[1.5] font-bold uppercase mb-2'>Other Settings</h2>
+                                <ul>
+                                    <li
+                                        className='p-2 border border-border-color border-t-0 first:border-t'>
+                                        <div className="form-check form-switch">
+                                            <input
+                                                type="checkbox"
+                                                id="container_checkbox"
+                                                onChange={containerToggle}
+                                                checked={container}
+                                                className="form-check-input"
+                                            />
+                                            <label className="form-check-label" htmlFor="container_checkbox">Container</label>
+                                        </div>
+                                    </li>
+                                    <li
+                                        className='p-2 border border-border-color border-t-0 first:border-t'>
+                                        <div className="form-check form-switch">
+                                            <input
+                                                type="checkbox"
+                                                id='radius_checkbox'
+                                                className="form-check-input"
+                                                onChange={radiusToggle}
+                                                checked={showRadius}
+                                            />
+                                            <label className="form-check-label" htmlFor='radius_checkbox'>
+                                                Border Radius
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li
+                                        className='p-2 border border-border-color border-t-0 first:border-t'>
+                                        <div className="form-check form-switch">
+                                            <input
+                                                type="checkbox"
+                                                id="shadow_checkbox"
+                                                onChange={shadowToggle}
+                                                checked={showShadow}
+                                                className="form-check-input"
+                                            />
+                                            <label className="form-check-label" htmlFor="shadow_checkbox">Card Box-Shadow</label>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </TabPanel>
